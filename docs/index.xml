@@ -6,5 +6,16 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://mack.travel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://mack.travel/about/</link>
+      <pubDate>Mon, 25 Sep 2023 15:43:30 -0400</pubDate>
+      
+      <guid>https://mack.travel/about/</guid>
+      <description>Documenting my travels abroad. Posting when I can. Photos are taken with a Fujifilm X-T30 II (XF27mm F2.8 R WR lens) and an iPhone 13 Pro. This site is hosted using GitHub pages and hugo.
+While traveling I&amp;rsquo;m building GymRats. Elixir, Swift, and Kotlin are my loves. Phoenix, Cocoa, and Compose are my muses. I work with a 13-inch, M1, 2020 MacBook Pro. It is ❤️‍🔥.
+I&amp;rsquo;m learning Portuguese on Duolingo.</description>
+    </item>
+    
   </channel>
 </rss>
