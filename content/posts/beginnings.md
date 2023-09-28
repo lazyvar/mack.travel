@@ -2,7 +2,7 @@
 title = 'Beginnings'
 date = 2023-09-29T02:01:49+07:00
 draft = false
-cover = "/images/0.jpg"
+og_image = "/images/0.jpg"
 
 [[photos]]
   url = "/images/0.jpg"
@@ -38,7 +38,7 @@ I'll be spending the first couple of days here getting situated. I've rented a Y
 
 I'm writing this at 2:00 am on my first night here. I arrived earlier this day and enjoyed a much needed hot shower and 10 hour sleep. Tomorrow I will have to stay up as late as I can and adjust my circadian rhythm.
 
-Is it a shame that my first meal here had to be McDonald's? It was the only thing open and it had an ATM. The beef was 100% Australian cattle (see picture) and it actually tasted like a burger unlike the processed stuff back home.
+Is it a shame that my first meal here had to be McDonald's? It was the only thing open and they had an ATM. The beef was 100% Australian cattle (see picture) and it actually kinda tasted like a real burger unlike the processed stuff back home.
 
 Some realizations I've had in my short time here: I've arrived at the tail end of the rainy season and I didn’t pack any rain gear. Thailand is one of the few countries that drive on the left hand side of the road. I know absolutely zero Thai.
 

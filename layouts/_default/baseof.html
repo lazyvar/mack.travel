@@ -39,8 +39,13 @@
   <title>
     {{ if .IsHome }}{{ else }}{{ if .Page.Title }}{{ lower .Page.Title }} / {{ end }}{{ end }}mack.travel
   </title>
-  <meta property="og:image" content="/images/0.jpg" />
 
+  {{ if .Page.Params.og_image }}
+  <meta property="og:image" content="{{ .Page.Params.og_image }}" />
+  {{ end }}
+
+  <script defer data-domain="mack.travel" src="https://plausible.io/js/script.js">
+  </script>
   <style>
     a {
       text-decoration: none;
