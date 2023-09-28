@@ -2,6 +2,7 @@
 title = 'Beginnings'
 date = 2023-09-29T02:01:49+07:00
 draft = false
+cover = "/images/0.jpg"
 
 [[photos]]
   url = "/images/0.jpg"
@@ -29,7 +30,9 @@ draft = false
 
 +++
 
-I've arrived in Chiang Mai and I feel great about what's to come. 2 trains, 3 planes, and 32 hours went by faster than expected. Normally when traveling for vacation I get really excited and have high energy. This time it's different because I have possibly 7 months of travel ahead of me and it's not exactly vacation. While "excited" is a correct word to use: calm, relaxed, and happy are more accurate. There is plenty of time and I'm not rushin nuthin.
+I've arrived in Chiang Mai and I feel great about what's to come. 2 trains, 3 planes, and 32 hours went by faster than expected. Normally when traveling for vacation I get really excited and have high energy. This time it's different because I have possibly 7 months of travel ahead of me and it's not exactly vacation.
+
+While "excited" is a correct word to use: calm, relaxed, and happy are more accurate. There is plenty of time and I'm not rushin nuthin.
 
 I'll be spending the first couple of days here getting situated. I've rented a Yamaha NMax 2021 from Chloe Motorbike Rentals. I found this place as a recommendation from a YouTube vlogger. It's a Facebook page managed by one person and they deliver the bike to your place of stay. It had good reviews and was pretty cheap so I booked it on the way over. I'm noticing many businesses don't have a website, but just a Facebook page.
 
