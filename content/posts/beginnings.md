@@ -26,8 +26,7 @@ og_image = "/images/0.jpg"
 
 [[photos]]
   url = "/images/5.jpg"
-  alt = "Rainy night Chiang Mai."
-
+  alt = "Rainy night in Chiang Mai."
 +++
 
 I've arrived in Chiang Mai and I feel great about what's to come. 2 trains, 3 planes, and 32 hours went by faster than expected. Normally when traveling for vacation I get really excited and have high energy. This time it's different because I have possibly 7 months of travel ahead of me and it's not exactly vacation.
