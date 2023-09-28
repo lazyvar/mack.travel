@@ -1,0 +1,28 @@
+{{ define "main" }}
+{{- $masonry_columns_count := 3 }}
+
+{{ $photos := slice }}
+
+{{/* The default behaviour is to use photos from all pages,
+so we set the intial value of our $pages array.
+*/}}
+
+{{ $pages := .Site.Pages }}
+
+{{/* We then proceed to list all the photos from the pages. */}}
+
+{{- $list := where $pages ".Params.photos" "!=" nil -}}
+
+{{ range $index, $value := $list }}
+{{- $post_url := .Permalink -}}
+{{- $post_photos := .Params.photos -}}
+{{ range $post_photo := $post_photos }}
+{{- $photo_with_post_url := merge $post_photo (dict "post_url" $post_url) -}}
+{{- $photos = $photos | append $photo_with_post_url -}}
+{{ end }}
+{{ end }}
+
+{{ partial "masonry.html" (dict "columns" 3 "photos" $photos "class" "photos-grid--visible-desktop") }}
+{{ partial "masonry.html" (dict "columns" 2 "photos" $photos "class" "photos-grid--visible-mobile") }}
+
+{{ end }}
