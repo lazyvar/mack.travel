@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
+  <url>
+    <loc>https://mack.travel/photos/</loc>
+    <lastmod>2023-09-29T02:54:25+07:00</lastmod>
+  </url><url>
+    <loc>https://mack.travel/posts/beginnings/</loc>
+    <lastmod>2023-09-29T02:01:49+07:00</lastmod>
+  </url><url>
+    <loc>https://mack.travel/posts/</loc>
+    <lastmod>2023-09-29T02:01:49+07:00</lastmod>
+  </url><url>
+    <loc>https://mack.travel/</loc>
+    <lastmod>2023-09-26T15:08:33-04:00</lastmod>
+  </url><url>
+    <loc>https://mack.travel/about/</loc>
+    <lastmod>2023-09-25T15:43:30-04:00</lastmod>
+  </url><url>
+    <loc>https://mack.travel/categories/</loc>
+  </url><url>
+    <loc>https://mack.travel/tags/</loc>
+  </url>
 </urlset>

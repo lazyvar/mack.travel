@@ -1,18 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
+    <title>Home on </title>
     <link>https://mack.travel/</link>
-    <description>Recent content on </description>
+    <description>Recent content in Home on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://mack.travel/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Sep 2023 15:08:33 -0400</lastBuildDate><atom:link href="https://mack.travel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Photos</title>
+      <link>https://mack.travel/photos/</link>
+      <pubDate>Fri, 29 Sep 2023 02:54:25 +0700</pubDate>
+      
+      <guid>https://mack.travel/photos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Beginnings</title>
+      <link>https://mack.travel/posts/beginnings/</link>
+      <pubDate>Fri, 29 Sep 2023 02:01:49 +0700</pubDate>
+      
+      <guid>https://mack.travel/posts/beginnings/</guid>
+      <description>I&amp;rsquo;ve arrived in Chiang Mai and I feel great about what&amp;rsquo;s to come. 2 trains, 3 planes, and 32 hours went by faster than expected. Normally when traveling for vacation I get really excited and have high energy. This time it&amp;rsquo;s different because I have possibly 7 months of travel ahead of me and it&amp;rsquo;s not exactly vacation. While &amp;ldquo;excited&amp;rdquo; is a correct word to use: calm, relaxed, and happy are more accurate.</description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>https://mack.travel/about/</link>
       <pubDate>Mon, 25 Sep 2023 15:43:30 -0400</pubDate>
       
       <guid>https://mack.travel/about/</guid>
-      <description>Documenting my travels abroad. Posting when I can. Photos are taken with a Fujifilm X-T30 II (XF27mm F2.8 R WR lens) and an iPhone 13 Pro. This site is hosted using GitHub pages and hugo.
+      <description>Documenting my travels abroad. Posting when I can. Photos are taken with a Fujifilm X-T30 II (XF27mm F2.8 R WR lens) and an iPhone 13 Pro. This site is hosted on GitHub pages, using hugo.
 While traveling I&amp;rsquo;m building GymRats. Elixir, Swift, and Kotlin are my loves. Phoenix, Cocoa, and Compose are my muses. I work with a 13-inch, M1, 2020 MacBook Pro. It is ❤️‍🔥.
 I&amp;rsquo;m learning Portuguese on Duolingo.</description>
     </item>
