@@ -12,6 +12,6 @@ I'm writing this at 2:00 am on my first night here. I arrived earlier this day a
 
 Is it a shame that my first meal here had to be McDonald's? It was the only thing open and it had an ATM. The beef was 100% Australian cattle (see picture) and it actually tasted like a burger unlike the processed stuff back home.
 
-A few things I've discovered in my short time here: I've arrived at the tail end of the rainy season and I didn’t pack any rain gear. Thailand is one of the few countries that drive on the left hand side of the road. I know absolutely zero Thai.
+Some realizations I've had in my short time here: I've arrived at the tail end of the rainy season and I didn’t pack any rain gear. Thailand is one of the few countries that drive on the left hand side of the road. I know absolutely zero Thai.
 
 ✌️
