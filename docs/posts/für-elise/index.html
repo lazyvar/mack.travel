@@ -1,0 +1,294 @@
+
+<!--
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣤⣤⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠖⠋⠉⠀⠀⠀⠀⠀⠀⠉⠓⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⣀⡴⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⡄⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⣠⠟⠀⠀⠀⠀⠀⠀⠀⣠⠞⠋⠳⣆⠀⠀⠀⠀⠀⢠⡤⣄⠀⢻⡀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⣰⠃⠀⠀⠀⠀⠀⠀⠀⣰⠃⠀⠀⠀⣼⠀⠀⠀⠀⢰⠃⠀⢸⡆⠸⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢠⡏⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⣰⠇⠀⠀⠀⠀⣿⠀⡀⣸⠁⢀⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⡾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⠤⠞⢁⣤⠤⠤⣄⠀⠘⠓⠚⠁⠀⢸⡇⠀⠀⠀⣠⣤⡀⠀
+  ⠀⢰⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠛⠓⠒⠋⠀⠀⠀⠀⠀⠀⣼⠀⠀⢰⠚⣯⢼⣇⠀
+  ⠀⣼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡇⠀⠀⠈⠉⠉⠋⠀⠀
+  ⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⠀⣀⣀⡀
+  ⢀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄⠀⠀⠀⢰⠛⣷⢄⡇
+  ⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⠀⠀⠀⠈⠙⠛⠚⠁
+  ⢸⡇⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⡀⠀⠀⠀⠀⠀⠀
+  ⢸⡇⠀⢰⡀⠀⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢲⡄⢹⡄⠀⠀⠀⠀⠀
+  ⠈⡇⠀⠸⡇⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣏⠉⠁⠀⠀⠀⠀⠀
+  ⠀⣧⠀⠀⠻⠶⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠀⠀
+  ⠀⢻⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣷⠀⠀⠀⠀⠀⠀
+  ⠀⠘⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣸⠃⠀⠀⠀⠀⠀
+  ⠀⠀⠀⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⢠⡿⠃⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠙⢦⡀⠀⠀⠀⠀⢀⣴⣇⠀⠀⠀⣠⣾⣇⣀⢀⣀⡴⠿⠶⠖⠋
+  ⠀⠀⠀⠀⠀⠀⠉⠛⠒⠒⠚⠉⠀⠈⠉⠉⠉⠁⠀⠀⠈⠉
+
+   -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/photos-grid.css">
+  <title>
+    für elise / mack.travel
+  </title>
+
+  
+  <meta property="og:image" content="/images/6.jpeg" />
+  
+
+  <script defer data-domain="mack.travel" src="https://plausible.io/js/script.js">
+  </script>
+  <style>
+    a {
+      text-decoration: none;
+      color: #1a78d7;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #1a78d7;
+    }
+
+    body {
+      font-family: 'Mooli', sans-serif;
+      background: white;
+      margin: auto;
+      margin-top: 25px;
+      max-width: 8.5in;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      line-height: 25px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    body {
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    main {
+      margin-top: 15px;
+      border-radius: 4px;
+      background: white;
+    }
+
+    .head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .sub-links a {
+      margin-left: 10px;
+    }
+
+    .wrapper {
+      min-height: calc(100vh - 100px);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    
+    <header>
+      <div class="head">
+        <div>
+          🌏 <a href="/">mack.travel</a>
+        </div>
+        <div class="sub-links">
+          <a href="/posts">/posts</a>
+          <a href="/photos">/photos</a>
+          <a href="/about">/about</a>
+        </div>
+      </div>
+      <p style="font-size: 10px;">
+        Currently in Chiang Mai, Thailand, Earth, Copernican System, Milky Way, Universe C-137
+      </p>
+    </header>
+    
+    
+<main>
+  
+  
+  
+
+  
+
+  <h1 style="margin-bottom: 5px;">für elise</h1>
+  <p style="font-size: 12px; color: gray; margin-top: 0;">saturday, september 30th, 2023 10:29 am</p>
+  <article>
+    <p>I am still stuck in time zone limbo. It feels like purgatory. I fell asleep too early yesterday and woke up again at 11:00pm. Not happy about that, but feeling optimistic about today&rsquo;s attempt. Because coffee.</p>
+<p>I spent these twilight hours reading and learning to play the piano. I&rsquo;ve never given the piano an attempt and am enjoying playing it. I&rsquo;ve chosen to learn Beethoven&rsquo;s &ldquo;Für Elise&rdquo;. It is a simpler song to learn because Beethoven made this song for a woman that he was in love with. He made the song easier so she could play it. The second half however is masterfully difficult. This is because Elise got engaged to another man and Beethoven upped the difficulty to the song as revenge. I feel you bro.</p>
+<p>The book I read and finished is called &ldquo;Pachinko&rdquo;. It was a good read; I enjoyed it. I tore through it and now I need another book.</p>
+<p>When daylight finally came around I poked my head outside and saw that the rain had stopped. I took a walk to old city and did some sightseeing. There are many small streets and alleyways and surprisingly a plethora of cannabis shops. I didn&rsquo;t think weed was legal in The Kingdom, but if I feel like I&rsquo;m walking around Amsterdam again.</p>
+<p>I took a couple of street photos using the X-T30 II and I am happy with the results and happy I bought, brought, and am using the camera here and now. I was worried about the quality as it can sometimes take blurry photos if you are not careful. It&rsquo;s not a bother to bring around and it fits nicely in my shoulder bag. All the visitors here I&rsquo;ve seen have either a shoulder bag or a fanny pack. How very hip.</p>
+<p>I haven&rsquo;t ridden the Yamaha yet and I don&rsquo;t plan to until my body is fully adjusted and I feel ready. I keep thinking &ldquo;oh wow another one-way street&rdquo;. Except it&rsquo;s not a one-way street. It&rsquo;s just that the cars are on the opposite side of what I am used to. I am planning on attending a driving school and get my motorcycle license here, but they haven&rsquo;t gotten back to me yet. I won&rsquo;t rush this as the city is pretty walkable and it&rsquo;s cheap to get a tuk-tuk where I need to go.</p>
+<p>I am eager for the week to start and am ready to get into a routine here.</p>
+<p>🎹</p>
+
+  </article>
+
+  
+  
+  
+  
+
+  
+
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-desktop">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      <img src="/images/6.jpeg" title="Pigeons eating bread in the morning." loading="eager" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/8.jpeg" title="Normally I don&#39;t like B&amp;W photos, but I think this is a nice picture." loading="eager" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/11.jpeg" title="Is there a name for this kind of space?" loading="eager" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/13.jpeg" title="Eyeball scanner allows for keyless entry." loading="lazy" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/15.jpeg" title="Cozy studio." loading="lazy" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/17.jpeg" title="Reading spot." loading="lazy" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/19.jpeg" title="Hi." loading="lazy" />
+    </div>
+    
+  </div>
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      <img src="/images/7.jpeg" title="Tourists lining up to take pictures with bird rats. How absurd" loading="eager" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/9.jpg" title="Cannabis everywhere." loading="eager" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/12.jpeg" title="Scoot scoot." loading="eager" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/14.jpeg" title="Full functioning kitchen." loading="lazy" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/16.jpeg" title="The guitar will stay there." loading="lazy" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/18.jpeg" title="Where the magic happens, the piano I mean." loading="lazy" />
+    </div>
+    
+  </div>
+  
+</div>
+  
+
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-mobile">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      <img src="/images/6.jpeg" title="Pigeons eating bread in the morning." loading="eager" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/7.jpeg" title="Tourists lining up to take pictures with bird rats. How absurd" loading="eager" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/8.jpeg" title="Normally I don&#39;t like B&amp;W photos, but I think this is a nice picture." loading="eager" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/9.jpg" title="Cannabis everywhere." loading="lazy" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/11.jpeg" title="Is there a name for this kind of space?" loading="lazy" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/12.jpeg" title="Scoot scoot." loading="lazy" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/13.jpeg" title="Eyeball scanner allows for keyless entry." loading="lazy" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/14.jpeg" title="Full functioning kitchen." loading="lazy" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/15.jpeg" title="Cozy studio." loading="lazy" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/16.jpeg" title="The guitar will stay there." loading="lazy" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/17.jpeg" title="Reading spot." loading="lazy" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/18.jpeg" title="Where the magic happens, the piano I mean." loading="lazy" />
+    </div>
+    
+    <div class="photos-grid__item">
+      <img src="/images/19.jpeg" title="Hi." loading="lazy" />
+    </div>
+    
+  </div>
+  
+</div>
+</main>
+
+    
+    
+  </div>
+  <footer>
+    <p style="margin: 0;">© mack hasz / <a href="https://mack.cloud">mack.cloud</a></p>
+  </footer>
+</body>
+
+</html>

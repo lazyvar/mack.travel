@@ -1,6 +1,21 @@
 {{ define "main" }}
 <main>
-  <h1>{{ .Title }}</h1>
+  {{ $day := .Date.Day }}
+  {{ $suffix := "th" }}
+  {{ if or (eq $day 11) (eq $day 12) (eq $day 13) }}
+    {{ $suffix = "th" }}
+  {{ else if (eq (mod $day 10) 1) }}
+    {{ $suffix = "st" }}
+  {{ else if (eq (mod $day 10) 2) }}
+    {{ $suffix = "nd" }}
+  {{ else if (eq (mod $day 10) 3) }}
+    {{ $suffix = "rd" }}
+  {{ end }}
+
+  {{ $formattedDate := printf "%s, %s %d%s, %d %d:%02d %s" (.Date.Local.Format "Monday") (.Date.Local.Format "January") $day $suffix .Date.Year .Date.Hour .Date.Minute (.Date.Local.Format "pm") }}
+
+  <h1 style="margin-bottom: 5px;">{{ lower .Title }}</h1>
+  <p style="font-size: 12px; color: gray; margin-top: 0;">{{ lower $formattedDate }}</p>
   <article>
     {{ .Content }}
   </article>
@@ -22,7 +37,7 @@
   {{ end }}
   {{ end }}
 
-  {{ partial "masonry.html" (dict "columns" 3 "photos" $photos "class" "photos-grid--visible-desktop") }}
-  {{ partial "masonry.html" (dict "columns" 2 "photos" $photos "class" "photos-grid--visible-mobile") }}
+  {{ partial "masonry.html" (dict "columns" 2 "photos" $photos "class" "photos-grid--visible-desktop") }}
+  {{ partial "masonry.html" (dict "columns" 1 "photos" $photos "class" "photos-grid--visible-mobile") }}
 </main>
 {{ end }}
