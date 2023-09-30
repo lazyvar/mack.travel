@@ -2,7 +2,7 @@
 <main>
   <h1>{{ lower .Title }}</h1>
   {{ range .Pages.ByPublishDate.Reverse }}
-  <p>{{.Date.Format "2006-1-2"}} <a href="{{.Permalink}}">{{ lower .Title}}</a></p>
+  <p>{{.Date.Local.Format "2006-1-2"}} <a href="{{.Permalink}}">{{ lower .Title}}</a></p>
   {{ end }}
 </main>
 {{ end }}
