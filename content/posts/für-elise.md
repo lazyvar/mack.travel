@@ -63,7 +63,7 @@ I spent these twilight hours reading and learning to play the piano. I've never 
 
 The book I read and finished is called "Pachinko". It was a good read; I enjoyed it. I tore through it and now I need another book.
 
-When daylight finally came around I poked my head outside and saw that the rain had stopped. I took a walk to old city and did some sightseeing. There are many small streets and alleyways and surprisingly a plethora of cannabis shops. I didn't think weed was legal in The Kingdom, but if I feel like I'm walking around Amsterdam again.
+When daylight finally came around I poked my head outside and saw that the rain had stopped. I took a walk to old city and did some sightseeing. There are many small streets and alleyways and surprisingly a plethora of cannabis shops. I didn't think weed was legal in The Kingdom, but I feel like I'm walking around Amsterdam again.
 
 I took a couple of street photos using the X-T30 II and I am happy with the results and happy I bought, brought, and am using the camera here and now. I was worried about the quality as it can sometimes take blurry photos if you are not careful. It's not a bother to bring around and it fits nicely in my shoulder bag. All the visitors here I've seen have either a shoulder bag or a fanny pack. How very hip.
 
