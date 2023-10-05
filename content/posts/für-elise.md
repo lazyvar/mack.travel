@@ -6,19 +6,19 @@ og_image = "/images/6.jpeg"
 
 [[photos]]
   url = "/images/6.jpeg"
-  alt = "Pigeons eating bread in the morning."
+  alt = "Pigeons eating bread in the morning"
   
 [[photos]]
   url = "/images/7.jpeg"
-  alt = "Tourists lining up to take pictures with bird rats. How absurd"
+  alt = "Tourists lining up to take pictures with bird rats, how absurd"
   
 [[photos]]
   url = "/images/8.jpeg"
-  alt = "Normally I don't like B&W photos, but I think this is a nice picture."
+  alt = "Normally I don't like B&W photos, but I think this is a nice picture"
   
 [[photos]]
   url = "/images/9.jpg"
-  alt = "Cannabis everywhere."
+  alt = "Cannabis everywhere"
   
 [[photos]]
   url = "/images/11.jpeg"
@@ -26,35 +26,35 @@ og_image = "/images/6.jpeg"
   
 [[photos]]
   url = "/images/12.jpeg"
-  alt = "Scoot scoot."
+  alt = "Scoot scoot"
   
 [[photos]]
   url = "/images/13.jpeg"
-  alt = "Eyeball scanner allows for keyless entry."
+  alt = "Eyeball scanner allows for keyless entry"
   
 [[photos]]
   url = "/images/14.jpeg"
-  alt = "Full functioning kitchen."
+  alt = "Full functioning kitchen"
   
 [[photos]]
   url = "/images/15.jpeg"
-  alt = "Cozy studio."
+  alt = "Cozy studio"
   
 [[photos]]
   url = "/images/16.jpeg"
-  alt = "The guitar will stay there."
+  alt = "The guitar will stay there"
   
 [[photos]]
   url = "/images/17.jpeg"
-  alt = "Reading spot."
+  alt = "Reading spot"
   
 [[photos]]
   url = "/images/18.jpeg"
-  alt = "Where the magic happens, the piano I mean."
+  alt = "Where the magic happens, the piano I mean"
   
 [[photos]]
   url = "/images/19.jpeg"
-  alt = "Hi."
+  alt = "Hi"
 +++
 
 I am still stuck in time zone limbo. It feels like purgatory. I fell asleep too early yesterday and woke up again at 11:00pm. Not happy about that, but feeling optimistic about today's attempt. Because coffee.

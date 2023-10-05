@@ -6,11 +6,11 @@ og_image = "/images/0.jpg"
 
 [[photos]]
   url = "/images/0.jpg"
-  alt = "My whole life in three bags."
+  alt = "My whole life in three bags"
 
 [[photos]]
   url = "/images/1.jpg"
-  alt = "Train to JFK."
+  alt = "Train to JFK"
 
 [[photos]]
   url = "/images/2.jpg"
@@ -18,15 +18,15 @@ og_image = "/images/0.jpg"
 
 [[photos]]
   url = "/images/3.jpg"
-  alt = "Packed plane to Abu Dhabi."
+  alt = "Packed plane to Abu Dhabi"
 
 [[photos]]
   url = "/images/4.jpg"
-  alt = "Look the cow in the face while you eat it you shameless monkey."
+  alt = "Look the cow in the face while you eat it you shameless monkey"
 
 [[photos]]
   url = "/images/5.jpg"
-  alt = "Rainy night in Chiang Mai."
+  alt = "Rainy night in Chiang Mai"
 +++
 
 I've arrived in Chiang Mai and I feel great about what's to come. 2 trains, 3 planes, and 32 hours went by faster than expected. Normally when traveling for vacation I get really excited and have high energy. This time it's different because I have possibly 7 months of travel ahead of me and it's not exactly vacation.
