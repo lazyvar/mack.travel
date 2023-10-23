@@ -16,7 +16,14 @@
   <div class="photos-grid__column">
     {{ range where $photos_with_columns "column_index" $column_index }}
     <div class="photos-grid__item">
-      <img src="{{ .url }}" title="{{ .alt }}" />
+      {{ if .type }}
+      <div style="padding:177.78% 0 0 0;position:relative;">
+        <iframe src="{{ .url }}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Chiang Mai Commute">
+        </iframe>
+      </div>
+      {{ else }}
+        <img src="{{ .url }}" title="{{ .alt }}" />
+      {{ end }}
     </div>
     {{ end }}
   </div>
