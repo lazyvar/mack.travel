@@ -1,0 +1,378 @@
+
+<!--
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣤⣤⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠖⠋⠉⠀⠀⠀⠀⠀⠀⠉⠓⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⣀⡴⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⡄⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⣠⠟⠀⠀⠀⠀⠀⠀⠀⣠⠞⠋⠳⣆⠀⠀⠀⠀⠀⢠⡤⣄⠀⢻⡀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⣰⠃⠀⠀⠀⠀⠀⠀⠀⣰⠃⠀⠀⠀⣼⠀⠀⠀⠀⢰⠃⠀⢸⡆⠸⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢠⡏⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⣰⠇⠀⠀⠀⠀⣿⠀⡀⣸⠁⢀⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⡾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⠤⠞⢁⣤⠤⠤⣄⠀⠘⠓⠚⠁⠀⢸⡇⠀⠀⠀⣠⣤⡀⠀
+  ⠀⢰⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠛⠓⠒⠋⠀⠀⠀⠀⠀⠀⣼⠀⠀⢰⠚⣯⢼⣇⠀
+  ⠀⣼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡇⠀⠀⠈⠉⠉⠋⠀⠀
+  ⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⠀⣀⣀⡀
+  ⢀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄⠀⠀⠀⢰⠛⣷⢄⡇
+  ⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⠀⠀⠀⠈⠙⠛⠚⠁
+  ⢸⡇⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⡀⠀⠀⠀⠀⠀⠀
+  ⢸⡇⠀⢰⡀⠀⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢲⡄⢹⡄⠀⠀⠀⠀⠀
+  ⠈⡇⠀⠸⡇⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣏⠉⠁⠀⠀⠀⠀⠀
+  ⠀⣧⠀⠀⠻⠶⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠀⠀
+  ⠀⢻⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣷⠀⠀⠀⠀⠀⠀
+  ⠀⠘⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣸⠃⠀⠀⠀⠀⠀
+  ⠀⠀⠀⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⢠⡿⠃⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠙⢦⡀⠀⠀⠀⠀⢀⣴⣇⠀⠀⠀⣠⣾⣇⣀⢀⣀⡴⠿⠶⠖⠋
+  ⠀⠀⠀⠀⠀⠀⠉⠛⠒⠒⠚⠉⠀⠈⠉⠉⠉⠁⠀⠀⠈⠉
+
+   -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/photos-grid.css">
+  <title>
+    lake life / mack.travel
+  </title>
+
+  
+  <meta property="og:image" content="/images/54.jpg" />
+  
+
+  <script defer data-domain="mack.travel" src="https://plausible.io/js/script.js">
+  </script>
+
+  <style>
+    a {
+      text-decoration: none;
+      color: #1a78d7;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #1a78d7;
+    }
+
+    body {
+      font-family: 'Mooli', sans-serif;
+      background: white;
+      margin: auto;
+      margin-top: 25px;
+      max-width: 8.5in;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      line-height: 25px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    body {
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    main {
+      margin-top: 15px;
+      border-radius: 4px;
+      background: white;
+    }
+
+    .head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .sub-links a {
+      margin-left: 10px;
+    }
+
+    .wrapper {
+      min-height: calc(100vh - 100px);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    
+    <header>
+      <div class="head">
+        <div>
+          🌏 <a href="/">mack.travel</a>
+        </div>
+        <div class="sub-links">
+          <a href="/posts">/posts</a>
+          <a href="/photos">/photos</a>
+          <a href="/about">/about</a>
+        </div>
+      </div>
+      <p style="font-size: 10px;">
+        Currently in Chiang Mai, Thailand, Earth, Copernican System, Milky Way, Universe C-137
+      </p>
+    </header>
+    
+    
+<main>
+  
+  
+  
+
+  
+
+  <h1 style="margin-bottom: 5px;">lake life</h1>
+  <p style="font-size: 12px; color: gray; margin-top: 0;">sunday, november 5th, 2023 12:41 pm</p>
+  <article>
+    <p>Whoa, we&rsquo;re <a href="https://www.youtube.com/watch?v=lDK9QqIzhwk">halfway there</a>. Can&rsquo;t believe it&rsquo;s been over a month since arriving in Chiang Mai and there&rsquo;s only three weeks left. It&rsquo;s gone by blazingly fast. That might be because I&rsquo;ve been doing the same thing every day. It&rsquo;s a coding groundhog&rsquo;s day out here. However, I am happy to report that I went outside and touched some grass.</p>
+<p>It was Friday and I realized I wasn&rsquo;t going to get done what I thought I would so I took off early and took a trip up to <a href="https://www.tourismthailand.org/Attraction/huay-tung-tao-reservoir">Huay Tueng Thao Reservoir</a>. This is a man-made lake 16 kilometers north of Old City. I motorbiked up there which of course was a feat in itself. This was my first time on a highway and I got the same feeling I had when I first got on the bike in the city. Frightening, exhilarating, and joyful. Again, the top speed is less than its US counterpart at around ~37 mph which is nothing like highways back home where some can get up to 80 mph.</p>
+<p>When I arrived at the lake I was welcomed by the beautiful countryside of Thailand. It is so green and luscious. I felt the warm embrace of nature&rsquo;s indifference and it felt good. I took a motorbike lap around the lake to get my bearings straight and see the sights. The lake was lined with little huts where you can sit and eat lunch and relax. Other activities included zip-lining, hiking, and going to a sheep petting farm. Chickens, bulls, and sheep all roamed free and would sometimes get in the street. There was also this cool garden of statues of different animals that you can tour and chill out at.</p>
+<p>A large tower sat at the edge of the lake which I climbed. I meditated at the top which is one of only a handful of times that I&rsquo;ve meditated after (half) participating in a <a href="https://www.dhamma.org/en-US/index">Vipassana</a> retreat. I made it 15 minutes before stopping and it was calming. I was mad sweaty at this point and hung out up there and cooled off. I sweat pretty much everywhere I go. Just wearing the bike helmet I sweat and I&rsquo;m just sitting on the bike pressing the gas. It&rsquo;s hot (up to 90° F) and I am a sweat-fast individual. Now you know.</p>
+<p>After hanging out on the tower, I found a picnic table and enjoyed some more tranquil time. This picnic table was near a statue of Buddha. Nobody was around. It was desolate. This place reminded me of Charlotte&rsquo;s <a href="https://whitewater.org/">Whitewater Center</a> which I love. Surprised there weren&rsquo;t more people here, but neat to have the place to yourself.</p>
+<p>All in all, it was a good symbolic trip. I need to keep pushing on the app and finished what I&rsquo;ve started, but taking a break is essential. Australia is just around the corner.</p>
+<p>🧘</p>
+
+  </article>
+
+  
+  
+  
+  
+
+  
+
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-desktop">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/42.jpeg" title="Epic pano" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/43.jpeg" title="Roar" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/45.jpg" title="Go outside and touch yourself some grass" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+      <div style="padding:177.78% 0 0 0;position:relative;">
+        <iframe src="https://player.vimeo.com/video/881081184?badge=0&amp;amp;autopause=0&amp;amp;quality_selector=1&amp;amp;player_id=0&amp;amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Chiang Mai Commute">
+        </iframe>
+      </div>
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/48.jpg" title="Gorillas" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/50.jpg" title="To Thao or not to Tao?" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/52.jpg" title="Man made" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/55.jpg" title="The story of the lake, at the top of the tower" />
+      
+    </div>
+    
+  </div>
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/54.jpg" title="Lone rider" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/44.jpg" title="The tower" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/46.jpg" title="Little huts" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/47.jpg" title="I&#39;m pretty sure this is Buddha" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/49.jpeg" title="Garden" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/51.jpg" title="Chill time" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/53.jpeg" title="Elephante" />
+      
+    </div>
+    
+  </div>
+  
+</div>
+  
+
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-mobile">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/42.jpeg" title="Epic pano" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/54.jpg" title="Lone rider" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/43.jpeg" title="Roar" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/44.jpg" title="The tower" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/45.jpg" title="Go outside and touch yourself some grass" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/46.jpg" title="Little huts" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+      <div style="padding:177.78% 0 0 0;position:relative;">
+        <iframe src="https://player.vimeo.com/video/881081184?badge=0&amp;amp;autopause=0&amp;amp;quality_selector=1&amp;amp;player_id=0&amp;amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Chiang Mai Commute">
+        </iframe>
+      </div>
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/47.jpg" title="I&#39;m pretty sure this is Buddha" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/48.jpg" title="Gorillas" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/49.jpeg" title="Garden" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/50.jpg" title="To Thao or not to Tao?" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/51.jpg" title="Chill time" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/52.jpg" title="Man made" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/53.jpeg" title="Elephante" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/55.jpg" title="The story of the lake, at the top of the tower" />
+      
+    </div>
+    
+  </div>
+  
+</div>
+</main>
+
+    
+    
+  </div>
+  <footer>
+    <p style="margin: 0;">© mack hasz / <a href="https://mack.cloud">mack.cloud</a></p>
+  </footer>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+
+</html>
