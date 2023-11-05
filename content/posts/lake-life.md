@@ -77,6 +77,6 @@ A large tower sat at the edge of the lake which I climbed. I meditated at the to
 
 After hanging out on the tower, I found a picnic table and enjoyed some more tranquil time. This picnic table was near a statue of Buddha. Nobody was around. It was desolate. This place reminded me of Charlotte's [Whitewater Center](https://whitewater.org/) which I love. Surprised there weren't more people here, but neat to have the place to yourself.
 
-All in all, it was a good symbolic trip. I need to keep pushing on the app and finished what I've started, but taking a break is essential. Australia is just around the corner.
+All in all, it was a good symbolic trip. I need to keep pushing on the app and finish what I've started, but taking a break is essential. Australia is just around the corner.
 
 🧘
