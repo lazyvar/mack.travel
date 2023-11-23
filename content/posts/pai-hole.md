@@ -10,7 +10,7 @@ I stayed at [Revolution Hostel Pai](https://www.hostelworld.com/st/hostels/p/312
 
 My hostel-mates were from many countries, but primarily from the UK, Germany, and the US in that order. The age group was generally younger with the median age of 24. There was one adventurous 18-year-old who was having a great time with the help of a self-proclaimed babysitter to help him stay alive. It was a good group and I was grateful to meet everyone after only talking to my computer for the past month.
 
-Some of the things I did in no particular order: watched the sunset at [Pai Canyon](https://maps.app.goo.gl/hd6HhKQVdHehfyNaA), went to a rave out in the jungle, soaked in the [Tha Pai hot springs](https://maps.app.goo.gl/rVZQaR2W7A6QKvks7), got street food on the walking street, ran 3 miles extremely hungover, didn’t get last in the drinking Olympics, ate avocado toast at [Om Garden Cafe](https://maps.app.goo.gl/FP3PBsB9SqKqXGwP6) shot pool, napped.
+Some of the things I did in no particular order: watched the sunset at [Pai Canyon](https://maps.app.goo.gl/hd6HhKQVdHehfyNaA), went to a rave out in the jungle, soaked in the [Tha Pai hot springs](https://maps.app.goo.gl/rVZQaR2W7A6QKvks7), got street food on the walking street, ran 3 miles extremely hungover, didn’t get last in the drinking Olympics, ate avocado toast at [Om Garden Cafe](https://maps.app.goo.gl/FP3PBsB9SqKqXGwP6), shot pool, napped.
 
 I unfortunately didn’t care to take many photos of things here so you’ll just have to use your imagination. Part of the magic of Pai is the surrounding countryside. It’s hard to describe its beauty, so maybe to see it, you’ll just have to go there yourself.
 
