@@ -1,0 +1,347 @@
+
+<!--
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣤⣤⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠖⠋⠉⠀⠀⠀⠀⠀⠀⠉⠓⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⣀⡴⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⡄⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⣠⠟⠀⠀⠀⠀⠀⠀⠀⣠⠞⠋⠳⣆⠀⠀⠀⠀⠀⢠⡤⣄⠀⢻⡀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⣰⠃⠀⠀⠀⠀⠀⠀⠀⣰⠃⠀⠀⠀⣼⠀⠀⠀⠀⢰⠃⠀⢸⡆⠸⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢠⡏⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⣰⠇⠀⠀⠀⠀⣿⠀⡀⣸⠁⢀⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⡾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⠤⠞⢁⣤⠤⠤⣄⠀⠘⠓⠚⠁⠀⢸⡇⠀⠀⠀⣠⣤⡀⠀
+  ⠀⢰⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠛⠓⠒⠋⠀⠀⠀⠀⠀⠀⣼⠀⠀⢰⠚⣯⢼⣇⠀
+  ⠀⣼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡇⠀⠀⠈⠉⠉⠋⠀⠀
+  ⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⠀⣀⣀⡀
+  ⢀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄⠀⠀⠀⢰⠛⣷⢄⡇
+  ⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⠀⠀⠀⠈⠙⠛⠚⠁
+  ⢸⡇⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⡀⠀⠀⠀⠀⠀⠀
+  ⢸⡇⠀⢰⡀⠀⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢲⡄⢹⡄⠀⠀⠀⠀⠀
+  ⠈⡇⠀⠸⡇⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣏⠉⠁⠀⠀⠀⠀⠀
+  ⠀⣧⠀⠀⠻⠶⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠀⠀
+  ⠀⢻⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣷⠀⠀⠀⠀⠀⠀
+  ⠀⠘⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣸⠃⠀⠀⠀⠀⠀
+  ⠀⠀⠀⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⢠⡿⠃⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠙⢦⡀⠀⠀⠀⠀⢀⣴⣇⠀⠀⠀⣠⣾⣇⣀⢀⣀⡴⠿⠶⠖⠋
+  ⠀⠀⠀⠀⠀⠀⠉⠛⠒⠒⠚⠉⠀⠈⠉⠉⠉⠁⠀⠀⠈⠉
+
+   -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/photos-grid.css">
+  <title>
+    my buddy buddha / mack.travel
+  </title>
+
+  
+  <meta property="og:image" content="/images/56.JPG" />
+  
+
+  <script defer data-domain="mack.travel" src="https://plausible.io/js/script.js">
+  </script>
+
+  <style>
+    a {
+      text-decoration: none;
+      color: #1a78d7;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #1a78d7;
+    }
+
+    body {
+      font-family: 'Mooli', sans-serif;
+      background: white;
+      margin: auto;
+      margin-top: 25px;
+      max-width: 8.5in;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      line-height: 25px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    body {
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    main {
+      margin-top: 15px;
+      border-radius: 4px;
+      background: white;
+    }
+
+    .head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .sub-links a {
+      margin-left: 10px;
+    }
+
+    .wrapper {
+      min-height: calc(100vh - 100px);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    
+    <header>
+      <div class="head">
+        <div>
+          🌏 <a href="/">mack.travel</a>
+        </div>
+        <div class="sub-links">
+          <a href="/posts">/posts</a>
+          <a href="/photos">/photos</a>
+          <a href="/about">/about</a>
+        </div>
+      </div>
+      <p style="font-size: 10px;">
+        Currently in Cairns, Australia, Earth, Copernican System, Milky Way, Universe C-137
+      </p>
+    </header>
+    
+    
+<main>
+  
+  
+  
+
+  
+
+  <h1 style="margin-bottom: 5px;">my buddy buddha</h1>
+  <p style="font-size: 12px; color: gray; margin-top: 0;">friday, november 17th, 2023 16:45 pm</p>
+  <article>
+    <p>Today I had originally planned to travel up to <a href="https://maps.app.goo.gl/QA8YQ5Me46gNAvGJ8">Pai</a> and had my hostel booked and everything, but when I awoke, it was a grey and cloudy day. I was looking forward to the drive the most and I decided to wait one more day to get the fun in the sun. Instead, I went on a self-guided Buddhist temple tour.</p>
+<p>There are over 300 temples in Chiang Mai, which I think is more than any other place ever? These temples are called “Wats” and can sometimes be so small, just a tiny hut, or sometimes so large, like a church. Anyone is free at any time to just walk in and sit and meditate or pray. Most did not have seats, but the bigger ones did. I popped in my AirPods, put on my favorite lo-fi Spotify playlist for my walk, and visited 6 or 7 of these Wats in Old City.</p>
+<p>They all more or less followed the same pattern. There was an entryway and a hall (short or long) that led to a statue or statues of Buddha or other important figures that I did not recognize. There were monks on site, but they were mostly doing their own thing. At one of the Wats, there was a “sit and talk to a monk” program which looked cool, but I did not participate in.</p>
+<p>Wat Chedi Luang is the oldest and looked different than the rest. It was more of a large pyramid with stairs that you could (in the past) ascend. Wat Phra Singh is central to Chiang Mai and the biggest. The whole compound was large.</p>
+<p>These Wats are all over Thailand and are quite beautiful. It was nice to sit and enjoy.</p>
+<p>🪷</p>
+
+  </article>
+
+  
+  
+  
+  
+
+  
+
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-desktop">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/56.JPG" title="My best shot yet" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/58.JPG" title="That man in the bottom left has been sitting there for 10 years" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/60.JPG" title="My buddy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/69.jpg" title="Stellar" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/65.jpg" title="Wat" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/67.jpg" title="Old Wat" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/63.JPG" title="Preparing for the night lantern festival" />
+      
+    </div>
+    
+  </div>
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/57.JPG" title="My favorite temple, this Buddha was massive" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/59.JPG" title="At the roof we meet the rain" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/64.jpg" title="Calm Buddha in the storm" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/62.JPG" title="Golden Buddha" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/66.jpg" title="More Wat" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/68.jpg" title="Golden Wats" />
+      
+    </div>
+    
+  </div>
+  
+</div>
+  
+
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-mobile">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/56.JPG" title="My best shot yet" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/57.JPG" title="My favorite temple, this Buddha was massive" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/58.JPG" title="That man in the bottom left has been sitting there for 10 years" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/59.JPG" title="At the roof we meet the rain" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/60.JPG" title="My buddy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/64.jpg" title="Calm Buddha in the storm" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/69.jpg" title="Stellar" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/62.JPG" title="Golden Buddha" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/65.jpg" title="Wat" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/66.jpg" title="More Wat" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/67.jpg" title="Old Wat" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/68.jpg" title="Golden Wats" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/63.JPG" title="Preparing for the night lantern festival" />
+      
+    </div>
+    
+  </div>
+  
+</div>
+</main>
+
+    
+    
+  </div>
+  <footer>
+    <p style="margin: 0;">© mack hasz / <a href="https://mack.cloud">mack.cloud</a></p>
+  </footer>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+
+</html>
