@@ -1,0 +1,361 @@
+
+<!--
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣤⣤⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠖⠋⠉⠀⠀⠀⠀⠀⠀⠉⠓⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⣀⡴⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⡄⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⣠⠟⠀⠀⠀⠀⠀⠀⠀⣠⠞⠋⠳⣆⠀⠀⠀⠀⠀⢠⡤⣄⠀⢻⡀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⣰⠃⠀⠀⠀⠀⠀⠀⠀⣰⠃⠀⠀⠀⣼⠀⠀⠀⠀⢰⠃⠀⢸⡆⠸⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢠⡏⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⣰⠇⠀⠀⠀⠀⣿⠀⡀⣸⠁⢀⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⡾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⠤⠞⢁⣤⠤⠤⣄⠀⠘⠓⠚⠁⠀⢸⡇⠀⠀⠀⣠⣤⡀⠀
+  ⠀⢰⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠛⠓⠒⠋⠀⠀⠀⠀⠀⠀⣼⠀⠀⢰⠚⣯⢼⣇⠀
+  ⠀⣼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡇⠀⠀⠈⠉⠉⠋⠀⠀
+  ⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⠀⣀⣀⡀
+  ⢀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄⠀⠀⠀⢰⠛⣷⢄⡇
+  ⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⠀⠀⠀⠈⠙⠛⠚⠁
+  ⢸⡇⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⡀⠀⠀⠀⠀⠀⠀
+  ⢸⡇⠀⢰⡀⠀⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢲⡄⢹⡄⠀⠀⠀⠀⠀
+  ⠈⡇⠀⠸⡇⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣏⠉⠁⠀⠀⠀⠀⠀
+  ⠀⣧⠀⠀⠻⠶⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠀⠀
+  ⠀⢻⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣷⠀⠀⠀⠀⠀⠀
+  ⠀⠘⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣸⠃⠀⠀⠀⠀⠀
+  ⠀⠀⠀⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⢠⡿⠃⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠙⢦⡀⠀⠀⠀⠀⢀⣴⣇⠀⠀⠀⣠⣾⣇⣀⢀⣀⡴⠿⠶⠖⠋
+  ⠀⠀⠀⠀⠀⠀⠉⠛⠒⠒⠚⠉⠀⠈⠉⠉⠉⠁⠀⠀⠈⠉
+
+   -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/photos-grid.css">
+  <title>
+    kuranda / mack.travel
+  </title>
+
+  
+  <meta property="og:image" content="/images/145.jpg" />
+  
+
+  <script defer data-domain="mack.travel" src="https://plausible.io/js/script.js">
+  </script>
+
+  <style>
+    a {
+      text-decoration: none;
+      color: #1a78d7;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #1a78d7;
+    }
+
+    body {
+      font-family: 'Mooli', sans-serif;
+      background: white;
+      margin: auto;
+      margin-top: 25px;
+      max-width: 8.5in;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      line-height: 25px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    body {
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    main {
+      margin-top: 15px;
+      border-radius: 4px;
+      background: white;
+    }
+
+    .head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .sub-links a {
+      margin-left: 10px;
+    }
+
+    .wrapper {
+      min-height: calc(100vh - 100px);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    
+    <header>
+      <div class="head">
+        <div>
+          🌏 <a href="/">mack.travel</a>
+        </div>
+        <div class="sub-links">
+          <a href="/posts">/posts</a>
+          <a href="/photos">/photos</a>
+          <a href="/about">/about</a>
+        </div>
+      </div>
+      <p style="font-size: 10px;">
+        Currently in Airlie Beach, Queensland, Australia, Earth, Copernican System, Milky Way, Universe C-137
+      </p>
+    </header>
+    
+    
+<main>
+  
+  
+  
+
+  
+
+  <h1 style="margin-bottom: 5px;">kuranda</h1>
+  <p style="font-size: 12px; color: gray; margin-top: 0;">sunday, november 26th, 2023 20:12 pm</p>
+  <article>
+    <p>A couple of hostel-mates were doing a scenic rainforest tour, and I joined in. We started off by taking a gondola lift through the rainforest, which was charming. There were 2 stops along the way where we could get out and walk around. The lift was taking us to <a href="https://en.wikipedia.org/wiki/Kuranda,_Queensland">Kuranda</a>, which is a small village inland from Cairns.</p>
+<p>When we arrived, we were hungry and found a crepe cafe where we fueled up. This cafe served kangaroo, which I had to try. I felt a bit weird about it, but apparently, it&rsquo;s common and actually a healthy meat to eat. If I can eat beef, pork, or chicken, then why can&rsquo;t I eat kangaroo? It was surprisingly delicious. It was light and tasted sweet. Would recommend to all my fellow carnivores.</p>
+<p>While in Kuranda, we went to a local koala garden, which was basically a small zoo. I definitely did not enjoy this, but it was alright. I don&rsquo;t love zoos, but it was still cool to see the animals. They had kangaroos (sorry, just ate you), crocodiles, wallabies, and koalas. This place was particularly discomforting because they offered koala holding, which is illegal in the other Australian states. There also weren&rsquo;t really any fences, and you could just walk up to some of the wallabies and feed them, which some children were doing. The whole thing didn&rsquo;t seem right. I was happy when we finally left.</p>
+<p>After participating in the sinful zoo watching, we took a hike through the jungle and got some fresh air. It was hot out, but we were mostly shaded. This 1-hour walk ended at the train platform for our departure.</p>
+<p>For the way back, we took a scenic train. This train was an older style and the route had been running since the early 1900s. It was slow like maple syrup. Our group was tired from the day, as well as the rest of the train members, and many slept. I stayed awake and enjoyed the gorgeous views of the cliffs of the forest. There was a long waterfall where people were swimming a natural pool at the top.</p>
+<p>I somehow found it in me to go on a 5km run with Jenny (German girl) when we got back. She is in better shape than I am; her second job is a fitness instructor. When I paused to walk for a bit, she started doing push-ups and proceeded to yell at me in full, displeasing German. I loved every second of it.</p>
+<p>After a brief nap back at the hostel, we all met up for dinner and drinks out on the town. Many were leaving the next day. For some, we have planned to meet again later down the coast. &lsquo;Twas a g&rsquo;day.</p>
+<p>🚡</p>
+
+  </article>
+
+  
+  
+  
+  
+
+  
+
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-desktop">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/145.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/147.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/149.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/151.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/153.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/155.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/157.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+  </div>
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/146.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/148.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/150.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/152.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/154.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/156.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/158.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+  </div>
+  
+</div>
+  
+
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-mobile">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/145.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/146.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/147.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/148.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/149.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/150.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/151.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/152.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/153.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/154.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/155.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/156.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/157.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/158.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+  </div>
+  
+</div>
+</main>
+
+    
+    
+  </div>
+  <footer>
+    <p style="margin: 0;">© mack hasz / <a href="https://mack.cloud">mack.cloud</a></p>
+  </footer>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+
+</html>

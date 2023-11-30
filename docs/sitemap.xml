@@ -2,10 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mack.travel/posts/off-to-aus/</loc>
-    <lastmod>2023-11-24T01:45:09+10:00</lastmod>
+    <loc>https://mack.travel/posts/great-barrier-reef/</loc>
+    <lastmod>2023-11-27T10:19:01+10:00</lastmod>
   </url><url>
     <loc>https://mack.travel/posts/</loc>
+    <lastmod>2023-11-27T10:19:01+10:00</lastmod>
+  </url><url>
+    <loc>https://mack.travel/posts/kuranda/</loc>
+    <lastmod>2023-11-26T20:12:19+10:00</lastmod>
+  </url><url>
+    <loc>https://mack.travel/posts/cairns/</loc>
+    <lastmod>2023-11-25T19:45:30+10:00</lastmod>
+  </url><url>
+    <loc>https://mack.travel/posts/off-to-aus/</loc>
     <lastmod>2023-11-24T01:45:09+10:00</lastmod>
   </url><url>
     <loc>https://mack.travel/posts/farm-life/</loc>

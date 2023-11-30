@@ -1,0 +1,513 @@
+
+<!--
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣤⣤⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠖⠋⠉⠀⠀⠀⠀⠀⠀⠉⠓⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⣀⡴⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⡄⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⣠⠟⠀⠀⠀⠀⠀⠀⠀⣠⠞⠋⠳⣆⠀⠀⠀⠀⠀⢠⡤⣄⠀⢻⡀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⣰⠃⠀⠀⠀⠀⠀⠀⠀⣰⠃⠀⠀⠀⣼⠀⠀⠀⠀⢰⠃⠀⢸⡆⠸⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢠⡏⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⣰⠇⠀⠀⠀⠀⣿⠀⡀⣸⠁⢀⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⡾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⠤⠞⢁⣤⠤⠤⣄⠀⠘⠓⠚⠁⠀⢸⡇⠀⠀⠀⣠⣤⡀⠀
+  ⠀⢰⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠛⠓⠒⠋⠀⠀⠀⠀⠀⠀⣼⠀⠀⢰⠚⣯⢼⣇⠀
+  ⠀⣼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡇⠀⠀⠈⠉⠉⠋⠀⠀
+  ⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⠀⣀⣀⡀
+  ⢀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄⠀⠀⠀⢰⠛⣷⢄⡇
+  ⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⠀⠀⠀⠈⠙⠛⠚⠁
+  ⢸⡇⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⡀⠀⠀⠀⠀⠀⠀
+  ⢸⡇⠀⢰⡀⠀⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢲⡄⢹⡄⠀⠀⠀⠀⠀
+  ⠈⡇⠀⠸⡇⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣏⠉⠁⠀⠀⠀⠀⠀
+  ⠀⣧⠀⠀⠻⠶⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠀⠀
+  ⠀⢻⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣷⠀⠀⠀⠀⠀⠀
+  ⠀⠘⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣸⠃⠀⠀⠀⠀⠀
+  ⠀⠀⠀⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⢠⡿⠃⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠙⢦⡀⠀⠀⠀⠀⢀⣴⣇⠀⠀⠀⣠⣾⣇⣀⢀⣀⡴⠿⠶⠖⠋
+  ⠀⠀⠀⠀⠀⠀⠉⠛⠒⠒⠚⠉⠀⠈⠉⠉⠉⠁⠀⠀⠈⠉
+
+   -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/photos-grid.css">
+  <title>
+    cairns / mack.travel
+  </title>
+
+  
+  <meta property="og:image" content="/images/237.jpeg" />
+  
+
+  <script defer data-domain="mack.travel" src="https://plausible.io/js/script.js">
+  </script>
+
+  <style>
+    a {
+      text-decoration: none;
+      color: #1a78d7;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #1a78d7;
+    }
+
+    body {
+      font-family: 'Mooli', sans-serif;
+      background: white;
+      margin: auto;
+      margin-top: 25px;
+      max-width: 8.5in;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      line-height: 25px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    body {
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    main {
+      margin-top: 15px;
+      border-radius: 4px;
+      background: white;
+    }
+
+    .head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .sub-links a {
+      margin-left: 10px;
+    }
+
+    .wrapper {
+      min-height: calc(100vh - 100px);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    
+    <header>
+      <div class="head">
+        <div>
+          🌏 <a href="/">mack.travel</a>
+        </div>
+        <div class="sub-links">
+          <a href="/posts">/posts</a>
+          <a href="/photos">/photos</a>
+          <a href="/about">/about</a>
+        </div>
+      </div>
+      <p style="font-size: 10px;">
+        Currently in Airlie Beach, Queensland, Australia, Earth, Copernican System, Milky Way, Universe C-137
+      </p>
+    </header>
+    
+    
+<main>
+  
+  
+  
+
+  
+
+  <h1 style="margin-bottom: 5px;">cairns</h1>
+  <p style="font-size: 12px; color: gray; margin-top: 0;">saturday, november 25th, 2023 19:45 pm</p>
+  <article>
+    <p>Cairns (pronounced &ldquo;Cans&rdquo;) is a wonderful gem. It&rsquo;s a small town with mostly a tourist focus. There are many expeditions to take from here, like snorkeling the Great Barrier Reef or touring a crocodile farm. I had nothing set up before I got here, but the hostel reception helped me get things planned.</p>
+<p>I&rsquo;m staying at <a href="https://travellersoasis.com.au/">Traveler&rsquo;s Oasis</a> hostel, which has won awards on Hostelworld for Australia&rsquo;s number one hostel. It features a small pool in the middle of the compound surrounded by buildings with dorms and private rooms. I am staying in a 4-person dorm. It is not a party hostel, so quiet hours are enforced after 10pm. It&rsquo;s still very social as hostels go. The vibes are tranquil, and I met loads of people here from the U.K., Germany, the Netherlands, Switzerland, and Sweden.</p>
+<p>Because I booked a tour through the hostel, I got a free bike trip out of it, and I took advantage of it on the first day and did a bike tour around town. I was impressed with the downtown area. The public amenities are to be envied. All of the following are publicly available and free: swimming pool, skate park, bouldering rock, volleyball, parks, bike and run path, electric grills, filtered water, fitness stations. I stopped and hung out at the lagoon (the public swimming pool), which featured a lot of people doing the same.</p>
+<p>On my tour around town, I noticed some sort of event setting up at one of the parks. This turned out to be a deadlifting competition put on by one of the <a href="https://www.zerow.com.au/cairns">local gyms</a>, and I decided to stay and watch. These people were lifting some serious weight. The top lifter put up 315kg or 694 lbs in the &ldquo;old money,&rdquo; as they say. There was a 13-year-old who participated, and you could tell in a couple of years that he is going to be a big boy. He looked 5 feet 10 inches already.</p>
+<p>I went to check out a local payphone because it had a sign touting free wifi. Add that to the public amenities list! It said, &ldquo;Call Santa for free. Dial #464646&rdquo;, which, of course, I did. An elf answered and eventually, I got routed to Santa and pleaded with him for a bountiful Christmas this year.</p>
+<p>🌴</p>
+
+  </article>
+
+  
+  
+  
+  
+
+  
+
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-desktop">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/120.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/122.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/124.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/126.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/128.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/130.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/132.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        
+          <div style="padding: 56.25% 0 0 0;position:relative;">
+            <iframe src="https://player.vimeo.com/video/888192895?badge=0&amp;amp;autopause=0&amp;amp;quality_selector=1&amp;amp;player_id=0&amp;amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+            </iframe>
+          </div>
+        
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/135.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/137.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/139.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/141.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/143.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+  </div>
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/121.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/123.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/125.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/127.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/129.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/131.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/133.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/134.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/136.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/138.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/140.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/142.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/144.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+  </div>
+  
+</div>
+  
+
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-mobile">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/120.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/121.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/122.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/123.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/124.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/125.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/126.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/127.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/128.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/129.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/130.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/131.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/132.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/133.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        
+          <div style="padding: 56.25% 0 0 0;position:relative;">
+            <iframe src="https://player.vimeo.com/video/888192895?badge=0&amp;amp;autopause=0&amp;amp;quality_selector=1&amp;amp;player_id=0&amp;amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+            </iframe>
+          </div>
+        
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/134.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/135.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/136.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/137.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/138.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/139.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/140.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/141.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/142.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/143.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/144.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+  </div>
+  
+</div>
+</main>
+
+    
+    
+  </div>
+  <footer>
+    <p style="margin: 0;">© mack hasz / <a href="https://mack.cloud">mack.cloud</a></p>
+  </footer>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+
+</html>
