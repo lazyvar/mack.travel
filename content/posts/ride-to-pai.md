@@ -102,4 +102,4 @@ Everything went smoothly and I had an absolute blast on this expedition. There w
 
 Along the way, there were many viewpoints. I only stopped at one because I was enjoying riding too much. I stopped at Doi Kiew Lom viewpoint in Huai Nam Dang National Park. The lookout featured vast stretches of jungle backed by mountains on the other side. I sat and rested here and enjoyed the view for a bit before beginning my final descent into Pai.
 
-🏍️
+🛣️

@@ -2,10 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mack.travel/posts/great-barrier-reef/</loc>
-    <lastmod>2023-11-27T10:19:01+10:00</lastmod>
+    <loc>https://mack.travel/posts/flying-whitsundays/</loc>
+    <lastmod>2023-12-03T11:00:01+10:00</lastmod>
   </url><url>
     <loc>https://mack.travel/posts/</loc>
+    <lastmod>2023-12-03T11:00:01+10:00</lastmod>
+  </url><url>
+    <loc>https://mack.travel/posts/sailing-whitsundays/</loc>
+    <lastmod>2023-12-01T10:59:56+10:00</lastmod>
+  </url><url>
+    <loc>https://mack.travel/posts/airlie-beach/</loc>
+    <lastmod>2023-11-30T10:59:30+10:00</lastmod>
+  </url><url>
+    <loc>https://mack.travel/posts/great-barrier-reef/</loc>
     <lastmod>2023-11-27T10:19:01+10:00</lastmod>
   </url><url>
     <loc>https://mack.travel/posts/kuranda/</loc>

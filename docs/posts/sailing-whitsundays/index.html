@@ -1,0 +1,302 @@
+
+<!--
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣤⣤⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠖⠋⠉⠀⠀⠀⠀⠀⠀⠉⠓⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⣀⡴⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⡄⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⣠⠟⠀⠀⠀⠀⠀⠀⠀⣠⠞⠋⠳⣆⠀⠀⠀⠀⠀⢠⡤⣄⠀⢻⡀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⣰⠃⠀⠀⠀⠀⠀⠀⠀⣰⠃⠀⠀⠀⣼⠀⠀⠀⠀⢰⠃⠀⢸⡆⠸⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢠⡏⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⣰⠇⠀⠀⠀⠀⣿⠀⡀⣸⠁⢀⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⡾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⠤⠞⢁⣤⠤⠤⣄⠀⠘⠓⠚⠁⠀⢸⡇⠀⠀⠀⣠⣤⡀⠀
+  ⠀⢰⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠛⠓⠒⠋⠀⠀⠀⠀⠀⠀⣼⠀⠀⢰⠚⣯⢼⣇⠀
+  ⠀⣼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡇⠀⠀⠈⠉⠉⠋⠀⠀
+  ⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⠀⣀⣀⡀
+  ⢀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄⠀⠀⠀⢰⠛⣷⢄⡇
+  ⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⠀⠀⠀⠈⠙⠛⠚⠁
+  ⢸⡇⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⡀⠀⠀⠀⠀⠀⠀
+  ⢸⡇⠀⢰⡀⠀⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢲⡄⢹⡄⠀⠀⠀⠀⠀
+  ⠈⡇⠀⠸⡇⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣏⠉⠁⠀⠀⠀⠀⠀
+  ⠀⣧⠀⠀⠻⠶⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠀⠀
+  ⠀⢻⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣷⠀⠀⠀⠀⠀⠀
+  ⠀⠘⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣸⠃⠀⠀⠀⠀⠀
+  ⠀⠀⠀⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⢠⡿⠃⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠙⢦⡀⠀⠀⠀⠀⢀⣴⣇⠀⠀⠀⣠⣾⣇⣀⢀⣀⡴⠿⠶⠖⠋
+  ⠀⠀⠀⠀⠀⠀⠉⠛⠒⠒⠚⠉⠀⠈⠉⠉⠉⠁⠀⠀⠈⠉
+
+   -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/photos-grid.css">
+  <title>
+    sailing whitsundays / mack.travel
+  </title>
+
+  
+  <meta property="og:image" content="/images/173.jpeg" />
+  
+
+  <script defer data-domain="mack.travel" src="https://plausible.io/js/script.js">
+  </script>
+
+  <style>
+    a {
+      text-decoration: none;
+      color: #1a78d7;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #1a78d7;
+    }
+
+    body {
+      font-family: 'Mooli', sans-serif;
+      background: white;
+      margin: auto;
+      margin-top: 25px;
+      max-width: 8.5in;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      line-height: 25px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    body {
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    main {
+      margin-top: 15px;
+      border-radius: 4px;
+      background: white;
+    }
+
+    .head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .sub-links a {
+      margin-left: 10px;
+    }
+
+    .wrapper {
+      min-height: calc(100vh - 100px);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    
+    <header>
+      <div class="head">
+        <div>
+          🌏 <a href="/">mack.travel</a>
+        </div>
+        <div class="sub-links">
+          <a href="/posts">/posts</a>
+          <a href="/photos">/photos</a>
+          <a href="/about">/about</a>
+        </div>
+      </div>
+      <p style="font-size: 10px;">
+        Currently on Fraser Island, Queensland, Australia, Earth, Copernican System, Milky Way, Universe C-137
+      </p>
+    </header>
+    
+    
+<main>
+  
+  
+  
+    
+  
+
+  
+
+  <h1 style="margin-bottom: 5px;">sailing whitsundays</h1>
+  <p style="font-size: 12px; color: gray; margin-top: 0;">friday, december 1st, 2023</p>
+  <article>
+    <p>The <a href="/posts/kuranda/">Kuranda crew</a> meets again, this time in the Whitsundays. When in Cairns, we figured out that we&rsquo;d be at Airlie Beach at the same time, and we were able to book this trip together.</p>
+<p>This was a 10-hour day spent out at sea. It was fucking hot. I used plenty of sunscreen and didn&rsquo;t get burnt, but got super red and tan, along with the rest of the boat. We got to snorkel for a bit, but it wasn&rsquo;t the same as it was in Cairns. The water was more murky. That&rsquo;s okay, as it wasn&rsquo;t the main reason for the adventure today and still got to enjoy some coral and fish.</p>
+<p>We stopped at Whitehaven Beach, which boasts some of the purest sand on planet Earth. The sand is 98.9% pure silica, which is the reason it does not heat up. You can walk on it fine without your feet hurting. The sand feels so different as it runs through your hands compared to other beach sand I&rsquo;m used to. More soft and forgiving. It was blindingly white and lit up the beach, providing a stark and distinct contrast to the ocean bordering it.</p>
+<p>Also on our stop at Whitehaven Beach was Hill Inlet Lookout. This portion of the ocean demonstrated a fusion of blues, greens, and turquoises. It&rsquo;s the iconic, picturesque spot and the reason you come to the Whitsundays. It was so blue and beautiful.</p>
+<p>We took hours getting back and our pace was slow. The skipper let the sails down, but I think they were for display purposes only, as we didn&rsquo;t go any faster by my account. Even though I&rsquo;ve already developed melanoma at this point, we had more fun in the sun.</p>
+<p>The night was capped off drinking cocktails at <a href="https://www.breezebarairlie.com/">Breeze Bar Airlie Beach</a> and dancing at an Irish pub.</p>
+<p>⛵️</p>
+
+  </article>
+
+  
+  
+  
+  
+
+  
+
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-desktop">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/181.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/183.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/185.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/187.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/189.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+  </div>
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/182.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/184.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/186.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/188.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+  </div>
+  
+</div>
+  
+
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-mobile">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/181.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/182.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/183.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/184.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/185.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/186.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/187.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/188.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/189.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+  </div>
+  
+</div>
+</main>
+
+    
+    
+  </div>
+  <footer>
+    <p style="margin: 0;">© mack hasz / <a href="https://mack.cloud">mack.cloud</a></p>
+  </footer>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+
+</html>

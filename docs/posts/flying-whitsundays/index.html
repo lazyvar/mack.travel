@@ -1,0 +1,525 @@
+
+<!--
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣤⣤⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠖⠋⠉⠀⠀⠀⠀⠀⠀⠉⠓⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⣀⡴⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⡄⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⣠⠟⠀⠀⠀⠀⠀⠀⠀⣠⠞⠋⠳⣆⠀⠀⠀⠀⠀⢠⡤⣄⠀⢻⡀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⣰⠃⠀⠀⠀⠀⠀⠀⠀⣰⠃⠀⠀⠀⣼⠀⠀⠀⠀⢰⠃⠀⢸⡆⠸⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢠⡏⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⣰⠇⠀⠀⠀⠀⣿⠀⡀⣸⠁⢀⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⡾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⠤⠞⢁⣤⠤⠤⣄⠀⠘⠓⠚⠁⠀⢸⡇⠀⠀⠀⣠⣤⡀⠀
+  ⠀⢰⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠛⠓⠒⠋⠀⠀⠀⠀⠀⠀⣼⠀⠀⢰⠚⣯⢼⣇⠀
+  ⠀⣼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡇⠀⠀⠈⠉⠉⠋⠀⠀
+  ⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⠀⣀⣀⡀
+  ⢀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄⠀⠀⠀⢰⠛⣷⢄⡇
+  ⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⠀⠀⠀⠈⠙⠛⠚⠁
+  ⢸⡇⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⡀⠀⠀⠀⠀⠀⠀
+  ⢸⡇⠀⢰⡀⠀⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢲⡄⢹⡄⠀⠀⠀⠀⠀
+  ⠈⡇⠀⠸⡇⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣏⠉⠁⠀⠀⠀⠀⠀
+  ⠀⣧⠀⠀⠻⠶⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠀⠀
+  ⠀⢻⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣷⠀⠀⠀⠀⠀⠀
+  ⠀⠘⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣸⠃⠀⠀⠀⠀⠀
+  ⠀⠀⠀⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⢠⡿⠃⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠙⢦⡀⠀⠀⠀⠀⢀⣴⣇⠀⠀⠀⣠⣾⣇⣀⢀⣀⡴⠿⠶⠖⠋
+  ⠀⠀⠀⠀⠀⠀⠉⠛⠒⠒⠚⠉⠀⠈⠉⠉⠉⠁⠀⠀⠈⠉
+
+   -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/photos-grid.css">
+  <title>
+    flying whitsundays / mack.travel
+  </title>
+
+  
+  <meta property="og:image" content="/images/207.jpeg" />
+  
+
+  <script defer data-domain="mack.travel" src="https://plausible.io/js/script.js">
+  </script>
+
+  <style>
+    a {
+      text-decoration: none;
+      color: #1a78d7;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #1a78d7;
+    }
+
+    body {
+      font-family: 'Mooli', sans-serif;
+      background: white;
+      margin: auto;
+      margin-top: 25px;
+      max-width: 8.5in;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      line-height: 25px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    body {
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    main {
+      margin-top: 15px;
+      border-radius: 4px;
+      background: white;
+    }
+
+    .head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .sub-links a {
+      margin-left: 10px;
+    }
+
+    .wrapper {
+      min-height: calc(100vh - 100px);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    
+    <header>
+      <div class="head">
+        <div>
+          🌏 <a href="/">mack.travel</a>
+        </div>
+        <div class="sub-links">
+          <a href="/posts">/posts</a>
+          <a href="/photos">/photos</a>
+          <a href="/about">/about</a>
+        </div>
+      </div>
+      <p style="font-size: 10px;">
+        Currently on Fraser Island, Queensland, Australia, Earth, Copernican System, Milky Way, Universe C-137
+      </p>
+    </header>
+    
+    
+<main>
+  
+  
+  
+    
+  
+
+  
+
+  <h1 style="margin-bottom: 5px;">flying whitsundays</h1>
+  <p style="font-size: 12px; color: gray; margin-top: 0;">sunday, december 3rd, 2023</p>
+  <article>
+    <p>The beautiful Whitsunday Islands and Great Barrier Reef viewed from above; the photos speak for themselves.</p>
+<p>💙</p>
+
+  </article>
+
+  
+  
+  
+  
+
+  
+
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-desktop">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/208.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/191.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/193.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/210.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/213.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/194.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/196.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/198.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/200.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/215.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/217.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/203.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/205.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/207.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+  </div>
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/190.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/192.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/209.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/212.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/214.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/195.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/197.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/199.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/201.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/216.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/202.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/204.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/206.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/218.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+  </div>
+  
+</div>
+  
+
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-mobile">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/208.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/190.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/191.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/192.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/193.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/209.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/210.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/212.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/213.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/214.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/194.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/195.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/196.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/197.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/198.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/199.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/200.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/201.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/215.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/216.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/217.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/202.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/203.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/204.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/205.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/206.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/207.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/218.jpg" title="" loading="lazy" />
+      
+    </div>
+    
+  </div>
+  
+</div>
+</main>
+
+    
+    
+  </div>
+  <footer>
+    <p style="margin: 0;">© mack hasz / <a href="https://mack.cloud">mack.cloud</a></p>
+  </footer>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+
+</html>

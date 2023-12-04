@@ -1,0 +1,359 @@
+
+<!--
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣤⣤⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠖⠋⠉⠀⠀⠀⠀⠀⠀⠉⠓⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⣀⡴⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⡄⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⣠⠟⠀⠀⠀⠀⠀⠀⠀⣠⠞⠋⠳⣆⠀⠀⠀⠀⠀⢠⡤⣄⠀⢻⡀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⣰⠃⠀⠀⠀⠀⠀⠀⠀⣰⠃⠀⠀⠀⣼⠀⠀⠀⠀⢰⠃⠀⢸⡆⠸⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢠⡏⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⣰⠇⠀⠀⠀⠀⣿⠀⡀⣸⠁⢀⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⡾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⠤⠞⢁⣤⠤⠤⣄⠀⠘⠓⠚⠁⠀⢸⡇⠀⠀⠀⣠⣤⡀⠀
+  ⠀⢰⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠛⠓⠒⠋⠀⠀⠀⠀⠀⠀⣼⠀⠀⢰⠚⣯⢼⣇⠀
+  ⠀⣼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡇⠀⠀⠈⠉⠉⠋⠀⠀
+  ⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⠀⣀⣀⡀
+  ⢀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄⠀⠀⠀⢰⠛⣷⢄⡇
+  ⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⠀⠀⠀⠈⠙⠛⠚⠁
+  ⢸⡇⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⡀⠀⠀⠀⠀⠀⠀
+  ⢸⡇⠀⢰⡀⠀⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢲⡄⢹⡄⠀⠀⠀⠀⠀
+  ⠈⡇⠀⠸⡇⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣏⠉⠁⠀⠀⠀⠀⠀
+  ⠀⣧⠀⠀⠻⠶⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠀⠀
+  ⠀⢻⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣷⠀⠀⠀⠀⠀⠀
+  ⠀⠘⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣸⠃⠀⠀⠀⠀⠀
+  ⠀⠀⠀⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⢠⡿⠃⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠙⢦⡀⠀⠀⠀⠀⢀⣴⣇⠀⠀⠀⣠⣾⣇⣀⢀⣀⡴⠿⠶⠖⠋
+  ⠀⠀⠀⠀⠀⠀⠉⠛⠒⠒⠚⠉⠀⠈⠉⠉⠉⠁⠀⠀⠈⠉
+
+   -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/photos-grid.css">
+  <title>
+    airlie beach / mack.travel
+  </title>
+
+  
+  <meta property="og:image" content="/images/173.jpeg" />
+  
+
+  <script defer data-domain="mack.travel" src="https://plausible.io/js/script.js">
+  </script>
+
+  <style>
+    a {
+      text-decoration: none;
+      color: #1a78d7;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #1a78d7;
+    }
+
+    body {
+      font-family: 'Mooli', sans-serif;
+      background: white;
+      margin: auto;
+      margin-top: 25px;
+      max-width: 8.5in;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      line-height: 25px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    body {
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    main {
+      margin-top: 15px;
+      border-radius: 4px;
+      background: white;
+    }
+
+    .head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .sub-links a {
+      margin-left: 10px;
+    }
+
+    .wrapper {
+      min-height: calc(100vh - 100px);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    
+    <header>
+      <div class="head">
+        <div>
+          🌏 <a href="/">mack.travel</a>
+        </div>
+        <div class="sub-links">
+          <a href="/posts">/posts</a>
+          <a href="/photos">/photos</a>
+          <a href="/about">/about</a>
+        </div>
+      </div>
+      <p style="font-size: 10px;">
+        Currently on Fraser Island, Queensland, Australia, Earth, Copernican System, Milky Way, Universe C-137
+      </p>
+    </header>
+    
+    
+<main>
+  
+  
+  
+
+  
+
+  <h1 style="margin-bottom: 5px;">airlie beach</h1>
+  <p style="font-size: 12px; color: gray; margin-top: 0;">thursday, november 30th, 2023</p>
+  <article>
+    <p>I&rsquo;ve arrived at Airlie Beach by way of Greyhound bus. It&rsquo;s my first of 8 bus trips down the Australian east coast. I purchased an <a href="https://www.greyhound.com.au/east-coast-whimit">East Coast Whimit Pass</a>, which allows me unlimited rides for a span of 30 days for a price of $415 AUD ($276 USD). Pretty good deal. I&rsquo;ve met many others journeying the same way, some going up, some going down.</p>
+<p>Airlie Beach is a classic beach town and launching point for all things Whitsundays, the popular island chain just off the coast. It&rsquo;s also one of the many departure points along the east coast to view the Great Barrier Reef.</p>
+<p>I met up with my not-so-old friend from Cairns, Marco (Dutch guy), on the only beach where swimming was allowed. I met two other Dutch guys, a Dutch girl, and an English girl. We played a favorite game of mine where everyone secretly puts a song on a Spotify playlist, which is then played for the group. At the end, you have to guess who played which song. There&rsquo;s no name for the game; I&rsquo;ve made it up a couple of years ago. We played using everyone&rsquo;s top song from Spotify Wrapped, which made it more fun.</p>
+<p>That night we all went to Magnums bar, which is in the same place as my hostel. Magnums is the spot to be and features live music every night, but also, for the night we were there, toad racing. It was rather anticlimactic, as the toads just sat there for a long while until eventually one hopped its way across the finish line. You could bet on the toads, and bets were going for around $150 AUD. We played a game called Irish Schmack, which is sort of a card-based Thumper, which I will definitely bring back home.</p>
+<p>Tomorrow, I will be up early for a full day sailing the Whitsundays.</p>
+<p>🏖</p>
+
+  </article>
+
+  
+  
+  
+  
+
+  
+
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-desktop">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/167.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/169.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/171.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/173.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/175.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/177.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/179.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+  </div>
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/168.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/170.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/172.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/174.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/176.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/178.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/180.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+  </div>
+  
+</div>
+  
+
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-mobile">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/167.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/168.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/169.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/170.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/171.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/172.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/173.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/174.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/175.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/176.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/177.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/178.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/179.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+        <img src="/images/180.jpeg" title="" loading="lazy" />
+      
+    </div>
+    
+  </div>
+  
+</div>
+</main>
+
+    
+    
+  </div>
+  <footer>
+    <p style="margin: 0;">© mack hasz / <a href="https://mack.cloud">mack.cloud</a></p>
+  </footer>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+
+</html>
