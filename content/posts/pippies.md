@@ -9,11 +9,11 @@ og_image = "/images/241.JPG"
   alt = ""
 
 [[photos]]
-  url = "/images/220.jpg"
+  url = "/images/220a.jpg"
   alt = ""
 
 [[photos]]
-  url = "/images/221.jpg"
+  url = "/images/221a.jpg"
   alt = ""
 
 [[photos]]
