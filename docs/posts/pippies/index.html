@@ -1,0 +1,660 @@
+
+<!--
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣤⣤⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠖⠋⠉⠀⠀⠀⠀⠀⠀⠉⠓⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⣀⡴⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⡄⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⣠⠟⠀⠀⠀⠀⠀⠀⠀⣠⠞⠋⠳⣆⠀⠀⠀⠀⠀⢠⡤⣄⠀⢻⡀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⣰⠃⠀⠀⠀⠀⠀⠀⠀⣰⠃⠀⠀⠀⣼⠀⠀⠀⠀⢰⠃⠀⢸⡆⠸⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢠⡏⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⣰⠇⠀⠀⠀⠀⣿⠀⡀⣸⠁⢀⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⡾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⠤⠞⢁⣤⠤⠤⣄⠀⠘⠓⠚⠁⠀⢸⡇⠀⠀⠀⣠⣤⡀⠀
+  ⠀⢰⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠛⠓⠒⠋⠀⠀⠀⠀⠀⠀⣼⠀⠀⢰⠚⣯⢼⣇⠀
+  ⠀⣼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡇⠀⠀⠈⠉⠉⠋⠀⠀
+  ⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⠀⣀⣀⡀
+  ⢀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄⠀⠀⠀⢰⠛⣷⢄⡇
+  ⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⠀⠀⠀⠈⠙⠛⠚⠁
+  ⢸⡇⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⡀⠀⠀⠀⠀⠀⠀
+  ⢸⡇⠀⢰⡀⠀⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢲⡄⢹⡄⠀⠀⠀⠀⠀
+  ⠈⡇⠀⠸⡇⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣏⠉⠁⠀⠀⠀⠀⠀
+  ⠀⣧⠀⠀⠻⠶⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠀⠀
+  ⠀⢻⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣷⠀⠀⠀⠀⠀⠀
+  ⠀⠘⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣸⠃⠀⠀⠀⠀⠀
+  ⠀⠀⠀⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⢠⡿⠃⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠙⢦⡀⠀⠀⠀⠀⢀⣴⣇⠀⠀⠀⣠⣾⣇⣀⢀⣀⡴⠿⠶⠖⠋
+  ⠀⠀⠀⠀⠀⠀⠉⠛⠒⠒⠚⠉⠀⠈⠉⠉⠉⠁⠀⠀⠈⠉
+
+   -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/photos-grid.css">
+  <title>
+    pippies / mack.travel
+  </title>
+
+  
+  <meta property="og:image" content="/images/241.JPG" />
+  
+
+  <script defer data-domain="mack.travel" src="https://plausible.io/js/script.js">
+  </script>
+
+  <style>
+    a {
+      text-decoration: none;
+      color: #1a78d7;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #1a78d7;
+    }
+
+    body {
+      font-family: 'Mooli', sans-serif;
+      background: white;
+      margin: auto;
+      margin-top: 25px;
+      max-width: 8.5in;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      line-height: 25px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    body {
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    main {
+      margin-top: 15px;
+      border-radius: 4px;
+      background: white;
+    }
+
+    .head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .sub-links a {
+      margin-left: 10px;
+    }
+
+    .wrapper {
+      min-height: calc(100vh - 100px);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    
+    <header>
+      <div class="head">
+        <div>
+          🌏 <a href="/">mack.travel</a>
+        </div>
+        <div class="sub-links">
+          <a href="/posts">/posts</a>
+          <a href="/photos">/photos</a>
+          <a href="/about">/about</a>
+        </div>
+      </div>
+      <p style="font-size: 10px;">
+        Currently in Noosa, Queensland, Australia, Earth, Copernican System, Milky Way, Universe C-137
+      </p>
+    </header>
+    
+    
+<main>
+  
+  
+  
+
+  
+
+  <h1 style="margin-bottom: 5px;">pippies</h1>
+  <p style="font-size: 12px; color: gray; margin-top: 0;">friday, december 8th, 2023</p>
+  <article>
+    <p>I spent a magical three days touring Fraser Island with <a href="https://www.pippiesbeachhouse.com.au/">Pippies Tag-Along Tours</a>. I can&rsquo;t remember how I stumbled upon this idea, but I booked it plenty in advance, and I am so glad I did it. 30 of us embarked on this adventure, led by our legendary Aussie tour guide, Scott.</p>
+<p>Scott has been doing tours on Fraser for 6 years now, and he&rsquo;s seen it all. The good vibes started with him and trickled down to the rest of the group. Very quickly, we all got to know each other, minus actually remembering anyone&rsquo;s names, but that didn&rsquo;t matter.</p>
+<p>We drove 4x4 Toyota Land Cruisers to get around the island, doing soft sand beach driving. I love driving and really enjoyed this part. It was easier than it looked, but can be difficult if you let it be. There are some portions where you need to rev it to avoid getting stuck, but as long as you did that, you were fine.</p>
+<p>We spent the days traveling to different swim spots and the nights making merry at the campground. The stars lit up for us, I lost all concept of time, there was no cell service, and no reason for it. Everything was right where it needed to be.</p>
+<p>All the things: Season of the sticks, Sam, rave cave, Wozzy, toads, group domination, paradise, backflips, sand surfing, radio chatter, Scott&rsquo;s birthday, buckle your seatbelts, Dingo&rsquo;s sucks, ABBA, ring of fire, Komodo dragons.</p>
+<p>⛺️</p>
+
+  </article>
+
+  
+  
+  
+  
+
+  
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-desktop">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/241.JPG" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/221.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/236.JPG" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/225.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/235.JPG" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/223.JPG" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/227.JPG" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/230.JPG" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/238.JPG" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/234.JPG" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/240.JPG" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+  </div>
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/220.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/232.JPG" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/239.JPG" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/231.JPG" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/222.JPG" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/226.JPG" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/228.JPG" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/229.JPG" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/233.JPG" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/237.JPG" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+  
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-mobile">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/241.JPG" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/220.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/221.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/232.JPG" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/236.JPG" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/239.JPG" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/225.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/231.JPG" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/235.JPG" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/222.JPG" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/223.JPG" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/226.JPG" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/227.JPG" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/228.JPG" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/230.JPG" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/229.JPG" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/238.JPG" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/233.JPG" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/234.JPG" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/237.JPG" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/240.JPG" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+</main>
+
+    
+    
+  </div>
+  <footer>
+    <p style="margin: 0;">© mack hasz / <a href="https://mack.cloud">mack.cloud</a></p>
+  </footer>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var lazyImages = [].slice.call(document.querySelectorAll("img.lazy-load"));
+    let active = false;
+
+    const lazyLoad = function() {
+        if (active === false) {
+            active = true;
+
+            setTimeout(function() {
+                lazyImages.forEach(function(lazyImage) {
+                    if ((lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0) && getComputedStyle(lazyImage).display !== "none") {
+                        lazyImage.src = lazyImage.dataset.src;
+                        lazyImage.classList.remove("lazy-load");
+
+                        lazyImages = lazyImages.filter(function(image) {
+                            return image !== lazyImage;
+                        });
+
+                        if (lazyImages.length === 0) {
+                            document.removeEventListener("scroll", lazyLoad);
+                            window.removeEventListener("resize", lazyLoad);
+                            window.removeEventListener("orientationchange", lazyLoad);
+                        }
+                    }
+                });
+
+                active = false;
+            }, 200);
+        }
+    };
+
+    const perPage = 10; 
+    let currentPage = 1;
+
+    function loadImagesForCurrentPage() {
+        const startIndex = (currentPage - 1) * perPage;
+        const endIndex = startIndex + perPage;
+        lazyImages.slice(startIndex, endIndex).forEach(img => img.src = img.dataset.src);
+    }
+
+    loadImagesForCurrentPage();
+
+    document.addEventListener("scroll", lazyLoad);
+    window.addEventListener("resize", lazyLoad);
+    window.addEventListener("orientationchange", lazyLoad);
+});
+</script>
+</body>
+
+</html>
