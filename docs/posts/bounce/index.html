@@ -1,0 +1,563 @@
+
+<!--
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣤⣤⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠖⠋⠉⠀⠀⠀⠀⠀⠀⠉⠓⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⣀⡴⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⡄⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⣠⠟⠀⠀⠀⠀⠀⠀⠀⣠⠞⠋⠳⣆⠀⠀⠀⠀⠀⢠⡤⣄⠀⢻⡀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⣰⠃⠀⠀⠀⠀⠀⠀⠀⣰⠃⠀⠀⠀⣼⠀⠀⠀⠀⢰⠃⠀⢸⡆⠸⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢠⡏⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⣰⠇⠀⠀⠀⠀⣿⠀⡀⣸⠁⢀⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⡾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⠤⠞⢁⣤⠤⠤⣄⠀⠘⠓⠚⠁⠀⢸⡇⠀⠀⠀⣠⣤⡀⠀
+  ⠀⢰⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠛⠓⠒⠋⠀⠀⠀⠀⠀⠀⣼⠀⠀⢰⠚⣯⢼⣇⠀
+  ⠀⣼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡇⠀⠀⠈⠉⠉⠋⠀⠀
+  ⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⠀⣀⣀⡀
+  ⢀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄⠀⠀⠀⢰⠛⣷⢄⡇
+  ⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⠀⠀⠀⠈⠙⠛⠚⠁
+  ⢸⡇⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⡀⠀⠀⠀⠀⠀⠀
+  ⢸⡇⠀⢰⡀⠀⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢲⡄⢹⡄⠀⠀⠀⠀⠀
+  ⠈⡇⠀⠸⡇⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣏⠉⠁⠀⠀⠀⠀⠀
+  ⠀⣧⠀⠀⠻⠶⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠀⠀
+  ⠀⢻⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣷⠀⠀⠀⠀⠀⠀
+  ⠀⠘⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣸⠃⠀⠀⠀⠀⠀
+  ⠀⠀⠀⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⢠⡿⠃⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠙⢦⡀⠀⠀⠀⠀⢀⣴⣇⠀⠀⠀⣠⣾⣇⣀⢀⣀⡴⠿⠶⠖⠋
+  ⠀⠀⠀⠀⠀⠀⠉⠛⠒⠒⠚⠉⠀⠈⠉⠉⠉⠁⠀⠀⠈⠉
+
+   -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/photos-grid.css">
+  <title>
+    bounce / mack.travel
+  </title>
+
+  
+  <meta property="og:image" content="/images/247.jpg" />
+  
+
+  <script defer data-domain="mack.travel" src="https://plausible.io/js/script.js">
+  </script>
+
+  <style>
+    a {
+      text-decoration: none;
+      color: #1a78d7;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #1a78d7;
+    }
+
+    body {
+      font-family: 'Mooli', sans-serif;
+      background: white;
+      margin: auto;
+      margin-top: 25px;
+      max-width: 8.5in;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      line-height: 25px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    body {
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    main {
+      margin-top: 15px;
+      border-radius: 4px;
+      background: white;
+    }
+
+    .head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .sub-links a {
+      margin-left: 10px;
+    }
+
+    .wrapper {
+      min-height: calc(100vh - 100px);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    
+    <header>
+      <div class="head">
+        <div>
+          🌏 <a href="/">mack.travel</a>
+        </div>
+        <div class="sub-links">
+          <a href="/posts">/posts</a>
+          <a href="/photos">/photos</a>
+          <a href="/about">/about</a>
+        </div>
+      </div>
+      <p style="font-size: 10px;">
+        Currently in Surfers Paradise, Queensland, Australia, Earth, Copernican System, Milky Way, Universe C-137
+      </p>
+    </header>
+    
+    
+<main>
+  
+  
+  
+
+  
+
+  <h1 style="margin-bottom: 5px;">bounce</h1>
+  <p style="font-size: 12px; color: gray; margin-top: 0;">thursday, december 14th, 2023</p>
+  <article>
+    <p>I arrived in Noosa still on the <a href="/posts/pippies">Fraser Island</a> high and wanting to keep it going. It wasn&rsquo;t hard to do so at <a href="https://www.staybounce.com">Bounce</a> where I spent the next 5 days. This boutique stay was the nicest hostel I&rsquo;ve stayed at. It had it all: rain showers, expansive kitchen, fancy pool, sun deck, full-service bar, mini-restaurant, co-working space, nice dorm beds, air con, and ping pong. It should be no surprise that I hardly left this place while in Noosa, and I regret nothing.</p>
+<p>My days always started with a run. I&rsquo;ve been running as much as I can while in Australia, and my distances have been improving. I&rsquo;m averaging about 3 miles per run. It is crazy hot here, but I&rsquo;m used to it now. I drink a lot of water throughout the day to fight dehydration.</p>
+<p>The rest of the days were spent sunbathing, reading, and enjoying the pool. At night, I would play cards or maybe go out. I won the weekly beer pong tournament and got a hat and some free drink tickets, which I quickly made use of.</p>
+<p>I did plenty of drinking and partying and met heaps of people from all over, but primarily from England and the U.K. To my surprise, the girl-to-guy ratio was something like 7 to 1. Maybe because this was a fancier hostel, and guys don&rsquo;t care about that as much and will choose the cheaper option. At times, I felt like I was on <a href="https://www.imdb.com/title/tt8467296/">Love Island</a>. The hostel staff did a good job at organizing social events and shuttles for going out into town.</p>
+<p>I met a lovely Welsh girl in my dorm room. We now follow each other on Goodreads, the social network for the deepest connections.</p>
+<p>One morning, I got pancakes from <a href="https://www.facebook.com/doubleshotnoosa/">Double Shot Noosa</a> which were out of this world. These buttermilk sweeties had caramelized bananas, chocolate chips, and were topped with vanilla ice cream. I can&rsquo;t describe in words how good they were, but I sat in heavenly bliss for a while afterward.</p>
+<p>On my last day, I finally left the hostel thanks to encouragement from an English brother and sister pair who were making their way down the coast to meet their parents for an epic family vacation. Them, an English girl, a German girl, and I made our way to Noosa National Park for a 2-hour hike. Our primary destination was the <a href="https://maps.app.goo.gl/zqpCgybxd4Y2Lkmp8">Fairy Pools</a>. This unofficial spot touted a small pool close to the ocean where you could take a dip. It was a bit dangerous as a large wave could sweep you away if you weren&rsquo;t careful. We stayed in the safe zone, so it was alright.</p>
+<p>That night we all went to disco bingo hosted by <a href="https://www.instagram.com/kbsnoosa">KB&rsquo;s</a>. I was looking forward to this and had a lot of fun. You basically dance and drink and play bingo and then it turns into just dancing. I didn&rsquo;t win anything, but had a great night out nonetheless.</p>
+<p>🍹</p>
+
+  </article>
+
+  
+  
+  
+  
+
+  
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-desktop">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/243.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/246.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/244.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/248.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/250.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/252.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/254.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/256.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+  </div>
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/247.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/242.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/245.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/249.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/251.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/253.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/255.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/257.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+  
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-mobile">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/243.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/247.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/246.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/242.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/244.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/245.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/248.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/249.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/250.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/251.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/252.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/253.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/254.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/255.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/256.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/257.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+</main>
+
+    
+    
+  </div>
+  <footer>
+    <p style="margin: 0;">© mack hasz / <a href="https://mack.cloud">mack.cloud</a></p>
+  </footer>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var lazyImages = [].slice.call(document.querySelectorAll("img.lazy-load"));
+    let active = false;
+
+    const lazyLoad = function() {
+        if (active === false) {
+            active = true;
+
+            setTimeout(function() {
+                lazyImages.forEach(function(lazyImage) {
+                    if ((lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0) && getComputedStyle(lazyImage).display !== "none") {
+                        lazyImage.src = lazyImage.dataset.src;
+                        lazyImage.classList.remove("lazy-load");
+
+                        lazyImages = lazyImages.filter(function(image) {
+                            return image !== lazyImage;
+                        });
+
+                        if (lazyImages.length === 0) {
+                            document.removeEventListener("scroll", lazyLoad);
+                            window.removeEventListener("resize", lazyLoad);
+                            window.removeEventListener("orientationchange", lazyLoad);
+                        }
+                    }
+                });
+
+                active = false;
+            }, 200);
+        }
+    };
+
+    const perPage = 10; 
+    let currentPage = 1;
+
+    function loadImagesForCurrentPage() {
+        const startIndex = (currentPage - 1) * perPage;
+        const endIndex = startIndex + perPage;
+        lazyImages.slice(startIndex, endIndex).forEach(img => img.src = img.dataset.src);
+    }
+
+    loadImagesForCurrentPage();
+
+    document.addEventListener("scroll", lazyLoad);
+    window.addEventListener("resize", lazyLoad);
+    window.addEventListener("orientationchange", lazyLoad);
+});
+</script>
+</body>
+
+</html>
