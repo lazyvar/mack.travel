@@ -1,0 +1,701 @@
+
+<!--
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣤⣤⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠖⠋⠉⠀⠀⠀⠀⠀⠀⠉⠓⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⣀⡴⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⡄⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⣠⠟⠀⠀⠀⠀⠀⠀⠀⣠⠞⠋⠳⣆⠀⠀⠀⠀⠀⢠⡤⣄⠀⢻⡀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⣰⠃⠀⠀⠀⠀⠀⠀⠀⣰⠃⠀⠀⠀⣼⠀⠀⠀⠀⢰⠃⠀⢸⡆⠸⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢠⡏⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⣰⠇⠀⠀⠀⠀⣿⠀⡀⣸⠁⢀⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⡾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⠤⠞⢁⣤⠤⠤⣄⠀⠘⠓⠚⠁⠀⢸⡇⠀⠀⠀⣠⣤⡀⠀
+  ⠀⢰⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠛⠓⠒⠋⠀⠀⠀⠀⠀⠀⣼⠀⠀⢰⠚⣯⢼⣇⠀
+  ⠀⣼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡇⠀⠀⠈⠉⠉⠋⠀⠀
+  ⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⠀⣀⣀⡀
+  ⢀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄⠀⠀⠀⢰⠛⣷⢄⡇
+  ⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⠀⠀⠀⠈⠙⠛⠚⠁
+  ⢸⡇⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⡀⠀⠀⠀⠀⠀⠀
+  ⢸⡇⠀⢰⡀⠀⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢲⡄⢹⡄⠀⠀⠀⠀⠀
+  ⠈⡇⠀⠸⡇⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣏⠉⠁⠀⠀⠀⠀⠀
+  ⠀⣧⠀⠀⠻⠶⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠀⠀
+  ⠀⢻⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣷⠀⠀⠀⠀⠀⠀
+  ⠀⠘⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣸⠃⠀⠀⠀⠀⠀
+  ⠀⠀⠀⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⢠⡿⠃⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠙⢦⡀⠀⠀⠀⠀⢀⣴⣇⠀⠀⠀⣠⣾⣇⣀⢀⣀⡴⠿⠶⠖⠋
+  ⠀⠀⠀⠀⠀⠀⠉⠛⠒⠒⠚⠉⠀⠈⠉⠉⠉⠁⠀⠀⠈⠉
+
+   -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/photos-grid.css">
+  <title>
+    surfers / mack.travel
+  </title>
+
+  
+  <meta property="og:image" content="/images/274.jpg" />
+  
+
+  <script defer data-domain="mack.travel" src="https://plausible.io/js/script.js">
+  </script>
+
+  <style>
+    a {
+      text-decoration: none;
+      color: #1a78d7;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #1a78d7;
+    }
+
+    body {
+      font-family: 'Mooli', sans-serif;
+      background: white;
+      margin: auto;
+      margin-top: 25px;
+      max-width: 8.5in;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      line-height: 25px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    body {
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    main {
+      margin-top: 15px;
+      border-radius: 4px;
+      background: white;
+    }
+
+    .head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .sub-links a {
+      margin-left: 10px;
+    }
+
+    .wrapper {
+      min-height: calc(100vh - 100px);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    
+    <header>
+      <div class="head">
+        <div>
+          🌏 <a href="/">mack.travel</a>
+        </div>
+        <div class="sub-links">
+          <a href="/posts">/posts</a>
+          <a href="/photos">/photos</a>
+          <a href="/about">/about</a>
+        </div>
+      </div>
+      <p style="font-size: 10px;">
+        Currently in Byron Bay, New South Wales, Australia, Earth, Copernican System, Milky Way, Universe C-137
+      </p>
+    </header>
+    
+    
+<main>
+  
+  
+  
+
+  
+
+  <h1 style="margin-bottom: 5px;">surfers</h1>
+  <p style="font-size: 12px; color: gray; margin-top: 0;">sunday, december 17th, 2023</p>
+  <article>
+    <p>Surfers Paradise in the Gold Coast was supposed to be the Mecca. How could it not be with a name like that? Before my travels, this destination was at the top of my list. My expectations were lowered as I met people traveling up the coast and giving this stay a negative review. In actuality, it was fine for what it was, but not what I thought it would be.</p>
+<p>I’m not sure what I thought I imagined, but in this Miami-esque clubbing hotspot, all there was to do was beach and club. So that’s what I did. Beach, then club. Beach and club. Beach. Club. It wasn’t a particularly amazing experience. I don’t love going to clubs like these, but I went with the flow. The beach was really nice, though.</p>
+<p>My brain has gone to mush. My chess rating has dropped 100 points and I’ve developed a small sore throat. Sentences be hard.</p>
+<p>I am looking forward to my next destination, Byron Bay. My fellow travelers have told me this place is the actual Mecca. I hear great things about this for-real surfer&rsquo;s paradise.</p>
+<p>I adjusted my travel plans because of this. Originally, I would only be spending 3 days there before going onward to Sydney for Xmas and then Melbourne for NYE. I am now extending my hostel in Byron to 10 days through Xmas, will be in Sydney for NYE, and scrapped Melbourne completely. I like this much better as missing Sydney on New Year&rsquo;s would have been a certified bad move dude.</p>
+<p>I am a man with a plan.</p>
+<p>♣️</p>
+
+  </article>
+
+  
+  
+  
+  
+
+  
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-desktop">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/258.jpeg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/260.jpeg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/262.jpeg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/264.jpeg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/266.jpeg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/268.jpeg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/270.jpeg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/272.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/274.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/276.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/278.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/280.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+  </div>
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/259.jpeg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/261.jpeg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/263.jpeg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/265.jpeg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/267.jpeg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/269.jpeg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/271.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/273.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/275.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/277.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/279.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+  
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-mobile">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/258.jpeg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/259.jpeg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/260.jpeg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/261.jpeg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/262.jpeg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/263.jpeg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/264.jpeg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/265.jpeg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/266.jpeg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/267.jpeg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/268.jpeg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/269.jpeg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/270.jpeg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/271.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/272.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/273.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/274.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/275.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/276.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/277.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/278.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/279.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/280.jpg" title="" loading="lazy" />
+      
+
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+</main>
+
+    
+    
+  </div>
+  <footer>
+    <p style="margin: 0;">© mack hasz / <a href="https://mack.cloud">mack.cloud</a></p>
+  </footer>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var lazyImages = [].slice.call(document.querySelectorAll("img.lazy-load"));
+    let active = false;
+
+    const lazyLoad = function() {
+        if (active === false) {
+            active = true;
+
+            setTimeout(function() {
+                lazyImages.forEach(function(lazyImage) {
+                    if ((lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0) && getComputedStyle(lazyImage).display !== "none") {
+                        lazyImage.src = lazyImage.dataset.src;
+                        lazyImage.classList.remove("lazy-load");
+
+                        lazyImages = lazyImages.filter(function(image) {
+                            return image !== lazyImage;
+                        });
+
+                        if (lazyImages.length === 0) {
+                            document.removeEventListener("scroll", lazyLoad);
+                            window.removeEventListener("resize", lazyLoad);
+                            window.removeEventListener("orientationchange", lazyLoad);
+                        }
+                    }
+                });
+
+                active = false;
+            }, 200);
+        }
+    };
+
+    const perPage = 10; 
+    let currentPage = 1;
+
+    function loadImagesForCurrentPage() {
+        const startIndex = (currentPage - 1) * perPage;
+        const endIndex = startIndex + perPage;
+        lazyImages.slice(startIndex, endIndex).forEach(img => img.src = img.dataset.src);
+    }
+
+    loadImagesForCurrentPage();
+
+    document.addEventListener("scroll", lazyLoad);
+    window.addEventListener("resize", lazyLoad);
+    window.addEventListener("orientationchange", lazyLoad);
+});
+</script>
+</body>
+
+</html>
