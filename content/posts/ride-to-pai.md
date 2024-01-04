@@ -1,6 +1,6 @@
 +++
 title = 'ride to pai'
-date = 2023-11-18T15:33:24+07:00
+date = 2023-11-18T15:33:24
 draft = false
 
 og_image = "/images/91.jpeg"

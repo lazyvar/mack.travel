@@ -1,6 +1,6 @@
 +++
 title = 'sailing whitsundays'
-date = 2023-12-01T10:59:56+10:00
+date = 2023-12-01T10:59:56
 draft = false
 og_image = "/images/173.jpeg"
 

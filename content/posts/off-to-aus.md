@@ -1,6 +1,6 @@
 +++
 title = 'off to aus'
-date = 2023-11-24T01:45:09+10:00
+date = 2023-11-24T01:45:09
 draft = false
 
 og_image = "/images/114.jpeg"

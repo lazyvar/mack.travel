@@ -1,6 +1,6 @@
 +++
 title = 'my buddy buddha'
-date = 2023-11-17T16:45:24+07:00
+date = 2023-11-17T16:45:24
 draft = false
 
 og_image = "/images/56.JPG"

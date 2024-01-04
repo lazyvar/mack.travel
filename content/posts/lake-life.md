@@ -1,6 +1,6 @@
 +++
 title = 'lake life'
-date = 2023-11-05T12:41:13+07:00
+date = 2023-11-05T12:41:13
 draft = false
 
 og_image = "/images/54.jpg"

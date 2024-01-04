@@ -1,0 +1,399 @@
+
+<!--
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣤⣤⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠖⠋⠉⠀⠀⠀⠀⠀⠀⠉⠓⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⠀⠀⣀⡴⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⡄⠀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⣠⠟⠀⠀⠀⠀⠀⠀⠀⣠⠞⠋⠳⣆⠀⠀⠀⠀⠀⢠⡤⣄⠀⢻⡀⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⣰⠃⠀⠀⠀⠀⠀⠀⠀⣰⠃⠀⠀⠀⣼⠀⠀⠀⠀⢰⠃⠀⢸⡆⠸⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢠⡏⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⣰⠇⠀⠀⠀⠀⣿⠀⡀⣸⠁⢀⡇⠀⠀⠀⠀⠀⠀⠀
+  ⠀⠀⡾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⠤⠞⢁⣤⠤⠤⣄⠀⠘⠓⠚⠁⠀⢸⡇⠀⠀⠀⣠⣤⡀⠀
+  ⠀⢰⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠛⠓⠒⠋⠀⠀⠀⠀⠀⠀⣼⠀⠀⢰⠚⣯⢼⣇⠀
+  ⠀⣼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡇⠀⠀⠈⠉⠉⠋⠀⠀
+  ⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⠀⠀⠀⣀⣀⡀
+  ⢀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄⠀⠀⠀⢰⠛⣷⢄⡇
+  ⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⠀⠀⠀⠈⠙⠛⠚⠁
+  ⢸⡇⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⡀⠀⠀⠀⠀⠀⠀
+  ⢸⡇⠀⢰⡀⠀⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢲⡄⢹⡄⠀⠀⠀⠀⠀
+  ⠈⡇⠀⠸⡇⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣏⠉⠁⠀⠀⠀⠀⠀
+  ⠀⣧⠀⠀⠻⠶⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠀⠀
+  ⠀⢻⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣷⠀⠀⠀⠀⠀⠀
+  ⠀⠘⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀
+  ⠀⠀⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣸⠃⠀⠀⠀⠀⠀
+  ⠀⠀⠀⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⢠⡿⠃⠀⠀⠀⠀⠀⠀
+  ⠀⠀⠀⠀⠙⢦⡀⠀⠀⠀⠀⢀⣴⣇⠀⠀⠀⣠⣾⣇⣀⢀⣀⡴⠿⠶⠖⠋
+  ⠀⠀⠀⠀⠀⠀⠉⠛⠒⠒⠚⠉⠀⠈⠉⠉⠉⠁⠀⠀⠈⠉
+
+   -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/photos-grid.css">
+  <title>
+    xmas / mack.travel
+  </title>
+
+  
+  <meta property="og:image" content="/images/317.JPG" />
+  
+
+  <script defer data-domain="mack.travel" src="https://plausible.io/js/script.js">
+  </script>
+
+  <style>
+    a {
+      text-decoration: none;
+      color: #1a78d7;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #1a78d7;
+    }
+
+    body {
+      font-family: 'Mooli', sans-serif;
+      background: white;
+      margin: auto;
+      margin-top: 25px;
+      max-width: 8.5in;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      line-height: 25px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    body {
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    main {
+      margin-top: 15px;
+      border-radius: 4px;
+      background: white;
+    }
+
+    .head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .sub-links a {
+      margin-left: 10px;
+    }
+
+    .wrapper {
+      min-height: calc(100vh - 100px);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    
+    <header>
+      <div class="head">
+        <div>
+          🌏 <a href="/">mack.travel</a>
+        </div>
+        <div class="sub-links">
+          <a href="/posts">/posts</a>
+          <a href="/photos">/photos</a>
+          <a href="/about">/about</a>
+        </div>
+      </div>
+      <p style="font-size: 10px;">
+        Currently in Chester Springs, Pennsylvania, United States, Earth, Copernican System, Milky Way, Universe C-137
+      </p>
+    </header>
+    
+    
+<main>
+  
+  
+  
+
+  
+
+  <h1 style="margin-bottom: 5px;">xmas</h1>
+  <p style="font-size: 12px; color: gray; margin-top: 0;">monday, december 25th, 2023</p>
+  <article>
+    <p>It was a Christmas miracle that I ran into Marius from Cairns. We had not planned to meet, and we didn&rsquo;t know we would be here at the same time. He was staying at the same hostel as me. It was Christmas Eve, and he was waiting in the lobby for the hostel event, which I joined. We went to a local bowling club. Not American bowling, as you may think, but Australian bowling, which is outside on a lawn.</p>
+<p>A famous bar in town is the dueling piano bar. It&rsquo;s maybe touristy, but it&rsquo;s a staple and a must-do. We tried getting in that night but failed as the bar hit capacity really early, at about 7 o&rsquo;clock. Makes sense since it was Christmas Eve, but I was disappointed. We went to a club in the same building, which was alright. I power-moved and booked a hotel to sleep in that night, claiming my health as an excuse. It was nice to get a really good night&rsquo;s sleep, which isn&rsquo;t always the case in the dorms.</p>
+<p>Christmas was spent on the beach. 8 hours total! I met up with Robyn, who I met on <a href="/posts/pippies/">Fraser Island</a>, and her friend Izzy, who I met in <a href="/posts/bounce/">Noosa</a>. Mia and the gang also joined us later. I partook in a gift exchange with them. They got me a group gift of all British food. Tea cakes, gravy, sausage rolls, jelly cookies, Irn-Bru, and twiglets. They were all delicious. I am a half-Brit now and know all the lingo. Not sure that&rsquo;s a good thing, but it is what it is.</p>
+<p>The day was not how I usually spend Xmas (much hotter), but I had a fantastic time nonetheless.</p>
+<p>🎅</p>
+
+  </article>
+
+  
+  
+  
+  
+
+  
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-desktop">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/313.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/314.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/316.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/318.JPG" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+  </div>
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/320.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/315.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/317.JPG" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/319.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+  
+
+<div class="photos-grid photos-grid--style-masonry photos-grid--visible-mobile">
+  
+  <div class="photos-grid__column">
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/313.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/320.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/314.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/315.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/316.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/317.JPG" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/318.JPG" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+    <div class="photos-grid__item">
+      
+
+      
+        <img src="/images/319.jpg" title="" loading="eager" />
+      
+
+      
+    </div>
+    
+  </div>
+  
+</div>
+
+</main>
+
+    
+    
+  </div>
+  <footer>
+    <p style="margin: 0;">© mack hasz / <a href="https://mack.cloud">mack.cloud</a></p>
+  </footer>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var lazyImages = [].slice.call(document.querySelectorAll("img.lazy-load"));
+    let active = false;
+
+    const lazyLoad = function() {
+        if (active === false) {
+            active = true;
+
+            setTimeout(function() {
+                lazyImages.forEach(function(lazyImage) {
+                    if ((lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0) && getComputedStyle(lazyImage).display !== "none") {
+                        lazyImage.src = lazyImage.dataset.src;
+                        lazyImage.classList.remove("lazy-load");
+
+                        lazyImages = lazyImages.filter(function(image) {
+                            return image !== lazyImage;
+                        });
+
+                        if (lazyImages.length === 0) {
+                            document.removeEventListener("scroll", lazyLoad);
+                            window.removeEventListener("resize", lazyLoad);
+                            window.removeEventListener("orientationchange", lazyLoad);
+                        }
+                    }
+                });
+
+                active = false;
+            }, 200);
+        }
+    };
+
+    const perPage = 10; 
+    let currentPage = 1;
+
+    function loadImagesForCurrentPage() {
+        const startIndex = (currentPage - 1) * perPage;
+        const endIndex = startIndex + perPage;
+        lazyImages.slice(startIndex, endIndex).forEach(img => img.src = img.dataset.src);
+    }
+
+    loadImagesForCurrentPage();
+
+    document.addEventListener("scroll", lazyLoad);
+    window.addEventListener("resize", lazyLoad);
+    window.addEventListener("orientationchange", lazyLoad);
+});
+</script>
+</body>
+
+</html>

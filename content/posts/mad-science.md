@@ -1,6 +1,6 @@
 +++
 title = 'mad science'
-date = 2023-11-15T20:45:24+07:00
+date = 2023-11-15T20:45:24
 draft = false
 +++
 

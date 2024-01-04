@@ -1,6 +1,6 @@
 +++
 title = 'kuranda'
-date = 2023-11-26T20:12:19+10:00
+date = 2023-11-26T20:12:19
 draft = false
 
 og_image = "/images/145.jpg"

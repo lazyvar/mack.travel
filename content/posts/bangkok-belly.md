@@ -1,6 +1,6 @@
 +++
 title = 'bangkok belly'
-date = 2023-10-15T09:20:25+07:00
+date = 2023-10-15T09:20:25
 draft = false
 +++
 

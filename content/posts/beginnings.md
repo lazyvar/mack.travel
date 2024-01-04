@@ -1,6 +1,6 @@
 +++
 title = 'Beginnings'
-date = 2023-09-29T02:01:49+07:00
+date = 2023-09-29T02:01:49
 draft = false
 og_image = "/images/0.jpg"
 

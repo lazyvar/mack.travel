@@ -1,6 +1,6 @@
 +++
 title = 'pai hole'
-date = 2023-11-20T10:18:24+07:00
+date = 2023-11-20T10:18:24
 draft = false
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = 'farm life'
-date = 2023-11-22T12:50:24+07:00
+date = 2023-11-22T12:50:24
 draft = false
 
 og_image = "/images/103.jpg"

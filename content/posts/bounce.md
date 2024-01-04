@@ -1,6 +1,6 @@
 +++
 title = 'bounce'
-date = 2023-12-14T08:26:05+10:00
+date = 2023-12-14T08:26:05
 draft = false
 og_image = "/images/247.jpg"
 

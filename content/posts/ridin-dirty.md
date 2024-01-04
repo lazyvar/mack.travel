@@ -1,6 +1,6 @@
 +++
 title = 'ridin dirty'
-date = 2023-10-23T08:20:12+07:00
+date = 2023-10-23T08:20:12
 draft = false
 og_image = "/images/37.jpg"
 

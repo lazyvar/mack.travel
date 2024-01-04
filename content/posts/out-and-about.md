@@ -1,6 +1,6 @@
 +++
 title = 'out and about'
-date = 2023-10-05T05:43:27+07:00
+date = 2023-10-05T05:43:27
 draft = false
 og_image = "/images/35.jpeg"
 

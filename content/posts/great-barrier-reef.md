@@ -1,6 +1,6 @@
 +++
 title = 'great barrier reef'
-date = 2023-11-27T10:19:01+10:00
+date = 2023-11-27T10:19:01
 draft = false
 og_image = "/images/162.jpeg"
 
